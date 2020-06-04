@@ -11,10 +11,10 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
-
 $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('articles',  ['uses' => 'ArticlesController@showArticles']);
+});
+
+$router->get('/{route:.*}/', function ()  {
+    return view('app');
 });

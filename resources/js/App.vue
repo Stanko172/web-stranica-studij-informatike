@@ -1,14 +1,12 @@
 <template>
   <div class="app">
       <h1>Studij informatike</h1>
-      
-        <p>
-            <router-link to="/first_route">First route</router-link>
-            <router-link to="/second_route">Second route</router-link>
-        </p>
+      <!--Komponenta za navigaciju-->
+        <Navbar />
 
       <router-view></router-view>
 
+      <!--Ovaj kod ispod je samo za demonstraciju, prilikom izrade početne stranice izbrisati (izmedu v-app)-->
       <v-app>
         <v-col class="text-center" cols="12" sm="4">
           <div class="my-2">
@@ -30,7 +28,11 @@
 </template>
 
 <script>
+import Navbar from './components/Navbar'
 export default {
+  components: {
+    Navbar
+  }
 
 }
 </script>

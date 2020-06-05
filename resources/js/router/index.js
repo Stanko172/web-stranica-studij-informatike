@@ -1,20 +1,26 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Articles from '../views/Articles.vue'
+import Raspored from '../views/Raspored.vue'
+import Nastavnici from '../views/Nastavnici.vue'
+import Nastavni_plan from '../views/Nastavni_plan.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home,
+        name: 'Raspored',
+        component: Raspored,
     },
     {
         path: '/obavijesti',
-        name: 'Obavijesti',
-        component: Articles,
+        name: 'Nastavnici',
+        component: Nastavnici,
+    },
+    {
+        path: '/nastavni_plan',
+        name: 'Nastavni_plan',
+        component: Nastavni_plan,
     }
 ]
 

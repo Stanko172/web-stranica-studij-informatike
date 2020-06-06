@@ -63,7 +63,7 @@
           </v-col>
         </v-row>
 
-        <v-btn class="float-right" color="purple darken-1" @click="sendMessage()" rounded>
+        <v-btn class="float-right" color="primary" @click="sendMessage()" rounded>
           <span class="button-text white--text">Pošalji</span>
           <v-icon right class="white--text">mdi-upload</v-icon>
         </v-btn>

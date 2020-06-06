@@ -9,7 +9,7 @@ const opts = {
   theme: {
 		themes: {
 			light: {
-				primary: colors.indigo.darken1, // #E53935
+				primary: colors.indigo.darken2, // #E53935
 				secondary: colors.green.darken1, // #FFCDD2
 				accent: colors.indigo.base,
 			},

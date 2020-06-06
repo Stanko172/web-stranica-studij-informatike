@@ -2281,6 +2281,69 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -2323,13 +2386,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       notifications: [],
-      api: "http://localhost:8000/api/articles",
-      months: ["Siječanj", "Veljača", "Ožujak", "Travanj", "Svibanj", "Lipanj", "Srpanj", "Kolovoz", "Rujan", "Listopad", "Studeni", "Prosinac"],
-      days: ["Nedjelja", "Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota"],
+      api: 'http://localhost:8000/api/articles',
+      months: ['Siječanj', 'Veljača', 'Ožujak', 'Travanj', 'Svibanj', 'Lipanj', 'Srpanj', 'Kolovoz', 'Rujan', 'Listopad', 'Studeni', 'Prosinac'],
+      days: ['Nedjelja', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota'],
       page: 1,
       perPage: 8
     };
@@ -4239,7 +4313,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.bg{\r\n  background-image: url(\"/bg1.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height: 600px;\r\n  position: relative;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.bg {\r\n  background-image: url(\"/bg1.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height: 600px;\r\n  position: relative;\n}\r\n", ""]);
 
 // exports
 
@@ -4258,7 +4332,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#app .v-card--shaped {\r\n  border-radius: 24px 4px;\n}\n.fade-enter-active,\r\n.fade-leave-active {\r\n  transition: opacity 1s;\n}\n.fade-enter,\r\n.fade-leave-to {\r\n  opacity: 0;\n}\r\n", ""]);
+exports.push([module.i, "\n#app .v-card--shaped {\n  border-radius: 24px 4px;\n}\n.fade-enter-active,\n.fade-leave-active {\n  transition: opacity 1s\n}\n.fade-enter,\n.fade-leave-to {\n  opacity: 0\n}\n#app .pagination-margin {\n  margin: 32px 0 70px 0;\n}\n", ""]);
 
 // exports
 
@@ -5599,7 +5673,7 @@ var render = function() {
                         _vm._v("Naslovnica")
                       ]),
                       _vm._v(" "),
-                      _c("v-tab", { attrs: { to: "/Notifications" } }, [
+                      _c("v-tab", { attrs: { to: "/obavijesti" } }, [
                         _vm._v("Obavijesti")
                       ]),
                       _vm._v(" "),
@@ -5638,7 +5712,7 @@ var render = function() {
           _c(
             "v-toolbar-title",
             { staticClass: "display-2 font-weight-medium" },
-            [_vm._v("Inforamtika")]
+            [_vm._v("INFORMATIKA")]
           ),
           _vm._v(" "),
           _vm._v(" "),
@@ -5776,7 +5850,7 @@ var render = function() {
                         _vm._v("Naslovnica")
                       ]),
                       _vm._v(" "),
-                      _c("v-tab", { attrs: { to: "/Notifications" } }, [
+                      _c("v-tab", { attrs: { to: "/obavijesti" } }, [
                         _vm._v("Obavijesti")
                       ]),
                       _vm._v(" "),
@@ -5818,7 +5892,7 @@ var render = function() {
               staticClass: "font-weight-medium",
               staticStyle: { "font-size": "25px" }
             },
-            [_vm._v("Inforamtika")]
+            [_vm._v("Informatika")]
           ),
           _vm._v(" "),
           _vm._v(" "),
@@ -6047,7 +6121,7 @@ var render = function() {
                 "v-btn",
                 {
                   staticClass: "float-right",
-                  attrs: { color: "purple darken-1", rounded: "" },
+                  attrs: { color: "primary", rounded: "" },
                   on: {
                     click: function($event) {
                       return _vm.sendMessage()
@@ -6105,76 +6179,260 @@ var render = function() {
       _c("br"),
       _vm._v(" "),
       _c(
-        "v-container",
-        { staticClass: "white" },
+        "v-row",
+        { attrs: { dense: "" } },
         [
           _c(
-            "v-row",
-            { attrs: { dense: "" } },
+            "v-col",
+            { attrs: { dense: "", cols: "md-7" } },
             [
-              _c(
-                "v-col",
-                { attrs: { dense: "", cols: "md-7" } },
-                [
-                  _c("span", { staticClass: "primary--text" }, [
-                    _c("h1", [_vm._v("Studij inforamtike")])
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("p", [
-                    _vm._v(
-                      "\n            U novije vrijeme razvoj informatičkih tehnologija sve više \n            utječe na društvo u cjelini, npr. ekonomiju, medicinu i druge znanosti. \n            U studiju informatike se stručni sadržaji realiziraju kroz obvezne i izborne \n            kolegije. Dopunjuju se metodičkim i pedagoško-psihološkim sadržajima. \n            Cilj ovog studija je osposobljavanje studenata za uspješno i društveno \n            odgovorno prenošenje informatičkog znanja na mlade naraštaje, \n            uz samostalno korištenje najnovije računalne tehnologije u pripadajućim i \n            raznolikim informatičkim primjenama. Studij završava izradom diplomskog rada \n            koji je samostalna obrada nekog znanstvenog ili stručnog problema.\n          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      attrs: {
-                        rounded: "",
-                        color: "primary",
-                        dark: "",
-                        href: "https://www.youtube.com/watch?v=Bvbmw7ckJS0"
-                      }
-                    },
-                    [
-                      _c(
-                        "v-icon",
-                        { staticClass: "ma-2", attrs: { size: "10" } },
-                        [_vm._v("fas fa-play")]
-                      ),
-                      _vm._v("\n            Promo video\n          ")
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
+              _c("span", { staticClass: "primary--text" }, [
+                _c("h1", [_vm._v("Studij Informatike")])
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n          U novije vrijeme razvoj informatičkih tehnologija sve više\n          utječe na društvo u cjelini, npr. ekonomiju, medicinu i druge znanosti.\n          U studiju informatike se stručni sadržaji realiziraju kroz obvezne i izborne\n          kolegije. Dopunjuju se metodičkim i pedagoško-psihološkim sadržajima.\n          Cilj ovog studija je osposobljavanje studenata za uspješno i društveno\n          odgovorno prenošenje informatičkog znanja na mlade naraštaje,\n          uz samostalno korištenje najnovije računalne tehnologije u pripadajućim i\n          raznolikim informatičkim primjenama. Studij završava izradom diplomskog rada\n          koji je samostalna obrada nekog znanstvenog ili stručnog problema.\n        "
+                )
+              ]),
               _vm._v(" "),
               _c(
-                "v-col",
+                "v-btn",
                 {
-                  staticStyle: { padding: "50px 0px 0px 0px" },
-                  attrs: { dense: "", cols: "md-5" }
+                  attrs: {
+                    rounded: "",
+                    color: "primary",
+                    dark: "",
+                    href: "https://www.youtube.com/watch?v=Bvbmw7ckJS0"
+                  }
                 },
                 [
-                  _c("img", {
-                    attrs: {
-                      src: "/studij_inf.jpg",
-                      alt: "",
-                      height: "200px",
-                      width: "320px"
-                    }
-                  })
-                ]
+                  _c("v-icon", { staticClass: "ma-2", attrs: { size: "10" } }, [
+                    _vm._v("fas fa-play")
+                  ]),
+                  _vm._v("Promo video\n        ")
+                ],
+                1
               )
             ],
             1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            {
+              staticStyle: { padding: "50px 0px 0px 0px" },
+              attrs: { dense: "", cols: "md-5" }
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/studij_inf.jpg",
+                  alt: "",
+                  height: "200px",
+                  width: "320px"
+                }
+              })
+            ]
           )
         ],
         1
-      )
+      ),
+      _vm._v(" "),
+      _c("v-hover", {
+        attrs: { "close-delay": "80" },
+        scopedSlots: _vm._u([
+          {
+            key: "default",
+            fn: function(ref) {
+              var hover = ref.hover
+              return [
+                _c(
+                  "v-card",
+                  { attrs: { shaped: "", elevation: hover ? 8 : 2 } },
+                  [
+                    _c(
+                      "v-row",
+                      { attrs: { align: "center" } },
+                      [
+                        _c(
+                          "v-col",
+                          { attrs: { cols: "md-7" } },
+                          [_c("v-img", { attrs: { src: "/matematika.png" } })],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-col",
+                          { attrs: { cols: "md-5" } },
+                          [
+                            _c("v-card-text", [
+                              _c(
+                                "p",
+                                {
+                                  staticClass:
+                                    "display-1 indigo--text text--darken-3 font-weight-medium"
+                                },
+                                [_vm._v("Studij Informatike")]
+                              ),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "justify-text pr-8" }, [
+                                _vm._v(
+                                  "\n              U studiju informatike se stručni sadržaji realiziraju kroz obvezne i izborne kolegije.\n              Dopunjuju se metodičkim i pedagoško-psihološkim sadržajima. Cilj ovog studija je\n              osposobljavanje studenata za uspješno i društveno odgovorno prenošenje informatičkog znanja\n              na mlade naraštaje, uz samostalno korištenje najnovije računalne tehnologije u pripadajućim i\n              raznolikim informatičkim primjenama. Studij završava izradom diplomskog rada koji je\n              samostalna obrada nekog znanstvenog ili stručnog problema.\n              "
+                                ),
+                                _c("br"),
+                                _vm._v(
+                                  "E-MAIL: informatika@fpmoz.sum.ba\n            "
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              { staticClass: "text-center mb-6 mt-4" },
+                              [
+                                _c(
+                                  "a",
+                                  {
+                                    attrs: {
+                                      href: _vm.mathFileUrl,
+                                      target: "_blank"
+                                    }
+                                  },
+                                  [
+                                    _c(
+                                      "v-btn",
+                                      {
+                                        attrs: { color: "primary", rounded: "" }
+                                      },
+                                      [
+                                        _c(
+                                          "v-icon",
+                                          {
+                                            staticClass: "white--text",
+                                            attrs: { left: "" }
+                                          },
+                                          [_vm._v("mdi-file-document")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "button-text white--text"
+                                          },
+                                          [_vm._v("Pregledaj letak studija")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ]
+            }
+          }
+        ])
+      }),
+      _vm._v(" "),
+      _c("v-divider", { staticStyle: { margin: "50px 0 50px 0" } }),
+      _vm._v(" "),
+      _c("v-hover", {
+        attrs: { "close-delay": "80" },
+        scopedSlots: _vm._u([
+          {
+            key: "default",
+            fn: function(ref) {
+              var hover = ref.hover
+              return [
+                _c(
+                  "v-card",
+                  {
+                    staticClass: "mb-12",
+                    attrs: { shaped: "", elevation: hover ? 8 : 2 }
+                  },
+                  [
+                    _c(
+                      "v-row",
+                      { attrs: { align: "center" } },
+                      [
+                        _c("v-col", { attrs: { cols: "md-2" } }),
+                        _vm._v(" "),
+                        _c(
+                          "v-col",
+                          { attrs: { cols: "md-3" } },
+                          [
+                            _c("v-img", {
+                              attrs: { src: "/matematika-informatika.png" }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-col",
+                          { attrs: { cols: "md-5" } },
+                          [
+                            _c("v-card-text", [
+                              _c(
+                                "p",
+                                {
+                                  staticClass:
+                                    "display-1 indigo--text text--darken-3 font-weight-medium"
+                                },
+                                [_vm._v("Studij Matematike-Informatike")]
+                              ),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "justify-text" }, [
+                                _vm._v(
+                                  "\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam, corporis rerum nam consectetur tenetur aliquid eaque, qui minus atque minima commodi provident? Voluptatibus earum, quas dicta quam quisquam quidem?\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos harum placeat quis, nihil enim totam? Vero deleniti sequi officia nostrum, aut aliquam quia assumenda, nesciunt repellat sint fugit. Laudantium?\n            "
+                                )
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "text-center mb-6 mt-4",
+                                attrs: { justify: "center", align: "end" }
+                              },
+                              [
+                                _c("a", {
+                                  attrs: {
+                                    href:
+                                      "https://drive.google.com/file/d/0B8wtFjOJCVHtNFB4SFRENnZnMWZuZzQ1dlUzaVFtN2pSYm1J/view",
+                                    target: "_blank"
+                                  }
+                                })
+                              ]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ]
+            }
+          }
+        ])
+      })
     ],
     1
   )
@@ -6214,57 +6472,90 @@ var render = function() {
       ]
     },
     [
-      _vm._l(_vm.notifications, function(notification, i) {
-        return _c(
-          "v-card",
-          {
-            key: i,
-            staticClass: "mx-auto mt-6",
-            attrs: { shaped: "", outlined: "", width: "90%" },
-            model: {
-              value: _vm.page,
-              callback: function($$v) {
-                _vm.page = $$v
-              },
-              expression: "page"
-            }
-          },
-          [
-            _c("v-card-text", [
-              _c(
-                "p",
-                { staticClass: "display-1", attrs: { color: "blue darken-1" } },
-                [_vm._v(_vm._s(notification.title))]
-              ),
-              _vm._v(" "),
-              _c("p", { staticClass: "mt-n3" }, [
-                _vm._v(_vm._s(_vm.formatDate(notification.created)))
-              ]),
-              _vm._v(" "),
-              _c("div", {
-                staticClass: "text--primary",
-                domProps: { innerHTML: _vm._s(notification.introtext) }
-              })
-            ]),
-            _vm._v(" "),
-            _c(
-              "v-card-actions",
-              { staticClass: "float-right" },
-              [
-                _c(
-                  "v-btn",
-                  { attrs: { text: "", color: "deep-purple accent-4" } },
-                  [_vm._v("Opširnije")]
-                )
-              ],
-              1
-            )
-          ],
-          1
-        )
+      _vm._l(_vm.visiblePages, function(notification, i) {
+        return _c("v-hover", {
+          key: i,
+          attrs: { "close-delay": "80" },
+          scopedSlots: _vm._u(
+            [
+              {
+                key: "default",
+                fn: function(ref) {
+                  var hover = ref.hover
+                  return [
+                    _c(
+                      "v-card",
+                      {
+                        staticClass: "mx-auto mt-6",
+                        attrs: {
+                          shaped: "",
+                          outlined: "",
+                          width: "90%",
+                          elevation: hover ? 8 : 2
+                        },
+                        model: {
+                          value: _vm.page,
+                          callback: function($$v) {
+                            _vm.page = $$v
+                          },
+                          expression: "page"
+                        }
+                      },
+                      [
+                        _c("v-card-text", [
+                          _c(
+                            "p",
+                            {
+                              staticClass: "display-1",
+                              attrs: { color: "blue darken-1" }
+                            },
+                            [_vm._v(_vm._s(notification.title))]
+                          ),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "mt-n3" }, [
+                            _vm._v(_vm._s(_vm.formatDate(notification.created)))
+                          ]),
+                          _vm._v(" "),
+                          _c("div", {
+                            staticClass: "text--primary",
+                            domProps: {
+                              innerHTML: _vm._s(notification.introtext)
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "v-card-actions",
+                          { staticClass: "float-right" },
+                          [
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: {
+                                  text: "",
+                                  color: "deep-purple accent-4"
+                                }
+                              },
+                              [_vm._v("Opširnije")]
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                }
+              }
+            ],
+            null,
+            true
+          )
+        })
       }),
       _vm._v(" "),
       _c("v-pagination", {
+        staticClass: "pagination-margin",
         attrs: { length: Math.ceil(_vm.notifications.length / _vm.perPage) },
         model: {
           value: _vm.page,
@@ -62724,7 +63015,7 @@ var routes = [{
   name: 'Vremenska crta',
   component: _views_Timeline_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
 }, {
-  path: '/Notifications',
+  path: '/obavijesti',
   name: 'Obavijesti',
   component: _views_Notifications_vue__WEBPACK_IMPORTED_MODULE_4__["default"]
 }, {
@@ -62850,8 +63141,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
+/* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
+/* harmony import */ var vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VHover */ "./node_modules/vuetify/lib/components/VHover/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
 
 
 
@@ -62878,7 +63173,11 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_7__["VIcon"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"]})
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_8__["VDivider"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__["VHover"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_11__["VImg"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"]})
 
 
 /* hot reload */
@@ -62954,7 +63253,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/index.js");
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
-/* harmony import */ var vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VPagination */ "./node_modules/vuetify/lib/components/VPagination/index.js");
+/* harmony import */ var vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VHover */ "./node_modules/vuetify/lib/components/VHover/index.js");
+/* harmony import */ var vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VPagination */ "./node_modules/vuetify/lib/components/VPagination/index.js");
 
 
 
@@ -62982,7 +63282,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_5__["VApp"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCard"],VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardActions"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardText"],VPagination: vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_8__["VPagination"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_5__["VApp"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCard"],VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardActions"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardText"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_8__["VHover"],VPagination: vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_9__["VPagination"]})
 
 
 /* hot reload */
@@ -63171,7 +63472,7 @@ var opts = {
   theme: {
     themes: {
       light: {
-        primary: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__["default"].indigo.darken1,
+        primary: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__["default"].indigo.darken2,
         // #E53935
         secondary: vuetify_lib_util_colors__WEBPACK_IMPORTED_MODULE_2__["default"].green.darken1,
         // #FFCDD2
@@ -63202,8 +63503,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike3\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike3\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

@@ -20,7 +20,7 @@ const routes = [
         component: Timeline,
     },
     {
-        path: '/Notifications',
+        path: '/obavijesti',
         name: 'Obavijesti',
         component: Notifications,
     },

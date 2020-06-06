@@ -1,25 +1,26 @@
 <template>
   <v-app>
+    <div class="bg">
     <!-- Komponenta za toolbar -->
     <toolbar />
-    <!--pozadina sadrzaja <Landing /> -->
+
+     
     <v-container style="margin-top: 52px">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
     </v-container>
+    </div>
   </v-app>
 </template>
 
 <script>
 import Navbar from "./components/Navbar";
 import toolbar from "./components/toolbar";
-import Landing from "./components/Landing";
 export default {
   components: {
     Navbar, 
     toolbar,
-    Landing
   }
 };
 </script>
@@ -32,5 +33,12 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+.bg{
+  background-image: url("/bg1.png");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: auto;
 }
 </style>

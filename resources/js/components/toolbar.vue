@@ -4,13 +4,14 @@
       <span>
         <v-app-bar-nav-icon @click="sidebar = !sidebar" x-large></v-app-bar-nav-icon>
       </span>
-      <v-toolbar-title class="display-2 font-weight-medium">INFORMATIKA</v-toolbar-title>
+      <v-toolbar-title class="display-2 font-weight-medium">Inforamtika</v-toolbar-title>
 
       <template v-slot:extension>
         <v-tabs>
-          <v-tab to="/">Raspored</v-tab>
-          <v-tab to="/obavijesti">Nastavnici</v-tab>
-          <v-tab to="/nastavni_plan">Nastavni plan</v-tab>
+          <v-tab to="/">Naslovnica</v-tab>
+          <v-tab to="/Notifications">Obavijesti</v-tab>
+          <v-tab to="/vremenska-crta">Vremenska crta</v-tab>
+          <v-tab to="/kontakt">Kontakt</v-tab>
         </v-tabs>
       </template>
 
@@ -61,13 +62,14 @@
       <span>
         <v-app-bar-nav-icon @click="sidebar = !sidebar" x-large></v-app-bar-nav-icon>
       </span>
-      <v-toolbar-title class="font-weight-medium" style="font-size: 25px">INFORMATIKA</v-toolbar-title>
+      <v-toolbar-title class="font-weight-medium" style="font-size: 25px">Inforamtika</v-toolbar-title>
 
       <template v-slot:extension>
         <v-tabs>
-          <v-tab to="/">Raspored</v-tab>
-          <v-tab to="obavijesti">Nastavnici</v-tab>
-          <v-tab to="/nastavni_plan">Nastavni plan</v-tab>
+          <v-tab to="/">Naslovnica</v-tab>
+          <v-tab to="/Notifications">Obavijesti</v-tab>
+          <v-tab to="/vremenska-crta">Vremenska crta</v-tab>
+          <v-tab to="/kontakt">Kontakt</v-tab>
         </v-tabs>
       </template>
 

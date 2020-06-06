@@ -63,22 +63,9 @@
           </v-col>
         </v-row>
 
-        <v-btn class="float-right" color="primary" @click="e6 = 2" rounded>
-					<span>Dalje</span>
-          <v-icon right>mdi-chevron-right</v-icon>
-				</v-btn>
-      </v-stepper-content>
-
-      <v-stepper-step complete step="2" complete-icon="mdi-buffer">Pošalji</v-stepper-step>
-      <v-stepper-content step="2">
-        <v-card color="grey lighten-1" class="mb-12" height="200px"></v-card>
         <v-btn class="float-right" color="purple darken-1" @click="sendMessage()" rounded>
           <span class="button-text white--text">Pošalji</span>
           <v-icon right class="white--text">mdi-upload</v-icon>
-        </v-btn>
-        <v-btn text @click="e6 = 1" outlined rounded>
-					<v-icon left>mdi-chevron-left</v-icon>
-          <span class="button-text">Natrag</span>
         </v-btn>
       </v-stepper-content>
     </v-stepper>

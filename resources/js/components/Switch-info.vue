@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="switch__card">
     <v-container class="my-5 test">
       <v-layout row wrap>
       <v-flex xs12 md6 class="test">
@@ -78,13 +78,18 @@ export default {
 
 <style>
 
+    .switch__card{
+        background: white;
+        box-shadow: 2px 8px 15px 0.2px #888888;
+    }
+
   .switch-info-icons{
     margin-top: 5em;
   }
 
   .card-switch-text{
     color: #1f4386;
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
 
   .fa-youtube, .fa-facebook, .fa-instagram{
@@ -98,6 +103,11 @@ export default {
   @media only screen and (min-width: 960px) {
     .card-switch-text{
       font-size: 1em;
+    }
+
+    .switch__card{
+        border-radius: 15px 50px 30px;
+        padding: 2em;
     }
 }
 

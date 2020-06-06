@@ -4409,7 +4409,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.switch-info-icons{\n    margin-top: 5em;\n}\n.card-switch-text{\n    color: #1f4386;\n    font-size: 0.8em;\n}\n.fa-youtube, .fa-facebook, .fa-instagram{\n    font-size: 2em;\n}\n.switch-info-icons{\n    margin-bottom: 5em;\n}\n@media only screen and (min-width: 960px) {\n.card-switch-text{\n      font-size: 1em;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.switch__card{\n        background: white;\n        box-shadow: 2px 8px 15px 0.2px #888888;\n}\n.switch-info-icons{\n    margin-top: 5em;\n}\n.card-switch-text{\n    color: #1f4386;\n    font-size: 0.6em;\n}\n.fa-youtube, .fa-facebook, .fa-instagram{\n    font-size: 2em;\n}\n.switch-info-icons{\n    margin-bottom: 5em;\n}\n@media only screen and (min-width: 960px) {\n.card-switch-text{\n      font-size: 1em;\n}\n.switch__card{\n        border-radius: 15px 50px 30px;\n        padding: 2em;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -5800,6 +5800,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
+    { staticClass: "switch__card" },
     [
       _c(
         "v-container",

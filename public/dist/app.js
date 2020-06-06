@@ -2422,27 +2422,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     SwitchInfo: _components_Switch_info__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   data: function data() {
-    return {};
+    return {
+      dialog: false,
+      mathFileUrl: 'https://drive.google.com/file/d/0B8wtFjOJCVHtNFB4SFRENnZnMWZuZzQ1dlUzaVFtN2pSYm1J/view'
+    };
   }
 });
 
@@ -4428,7 +4417,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.bg {\r\n  background-image: url(\"/bg1.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height: 600px;\r\n  position: relative;\n}\r\n", ""]);
+exports.push([module.i, "\n.bg {\r\n  background-image: url(\"/bg1.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  height: 600px;\r\n  position: relative;\n}\n.justify-text {\r\n  text-align: justify;\n}\n#app .row.align-center div.col.col-md-7 .v-responsive.v-image {\r\n  margin-left: 3px;\n}\r\n", ""]);
 
 // exports
 
@@ -5718,7 +5707,7 @@ var render = function() {
   return _c("v-app", [
     _c(
       "div",
-      { staticClass: "bg" },
+      {},
       [
         _c("toolbar"),
         _vm._v(" "),
@@ -6101,16 +6090,7 @@ var render = function() {
             [
               _c(
                 "v-list-item-group",
-                {
-                  attrs: { color: "blue darken-4" },
-                  model: {
-                    value: _vm.group,
-                    callback: function($$v) {
-                      _vm.group = $$v
-                    },
-                    expression: "group"
-                  }
-                },
+                { attrs: { color: "blue darken-4" } },
                 _vm._l(_vm.menu, function(item) {
                   return _c(
                     "v-list-item",
@@ -6487,67 +6467,68 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("br"),
+      _c("h1", { staticClass: "indigo--text text--darken-3" }, [
+        _vm._v("Dobrodošli na studij Informatike")
+      ]),
       _vm._v(" "),
       _c(
-        "v-row",
-        { attrs: { dense: "" } },
-        [
-          _c(
-            "v-col",
-            { attrs: { dense: "", cols: "md-7" } },
-            [
-              _c("span", { staticClass: "primary--text" }, [
-                _c("h1", [_vm._v("Studij Informatike")])
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n          U novije vrijeme razvoj informatičkih tehnologija sve više\n          utječe na društvo u cjelini, npr. ekonomiju, medicinu i druge znanosti.\n          U studiju informatike se stručni sadržaji realiziraju kroz obvezne i izborne\n          kolegije. Dopunjuju se metodičkim i pedagoško-psihološkim sadržajima.\n          Cilj ovog studija je osposobljavanje studenata za uspješno i društveno\n          odgovorno prenošenje informatičkog znanja na mlade naraštaje,\n          uz samostalno korištenje najnovije računalne tehnologije u pripadajućim i\n          raznolikim informatičkim primjenama. Studij završava izradom diplomskog rada\n          koji je samostalna obrada nekog znanstvenog ili stručnog problema.\n        "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "v-btn",
-                {
-                  attrs: {
-                    rounded: "",
-                    color: "primary",
-                    dark: "",
-                    href: "https://www.youtube.com/watch?v=Bvbmw7ckJS0"
-                  }
-                },
-                [
-                  _c("v-icon", { staticClass: "ma-2", attrs: { size: "10" } }, [
-                    _vm._v("fas fa-play")
-                  ]),
-                  _vm._v("Promo video\n        ")
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-col",
+        "v-dialog",
+        {
+          attrs: { scrollable: "" },
+          scopedSlots: _vm._u([
             {
-              staticStyle: { padding: "50px 0px 0px 0px" },
-              attrs: { dense: "", cols: "md-5" }
+              key: "activator",
+              fn: function(ref) {
+                var on = ref.on
+                return [
+                  _c(
+                    "v-btn",
+                    _vm._g(
+                      {
+                        staticClass: "mb-10",
+                        attrs: { color: "primary", rounded: "", block: "" }
+                      },
+                      on
+                    ),
+                    [
+                      _c(
+                        "v-icon",
+                        { staticClass: "white--text", attrs: { left: "" } },
+                        [_vm._v("mdi-play")]
+                      ),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "button-text" }, [
+                        _vm._v("Promo Video")
+                      ])
+                    ],
+                    1
+                  )
+                ]
+              }
+            }
+          ]),
+          model: {
+            value: _vm.dialog,
+            callback: function($$v) {
+              _vm.dialog = $$v
             },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/studij_inf.jpg",
-                  alt: "",
-                  height: "200px",
-                  width: "320px"
-                }
-              })
-            ]
-          )
+            expression: "dialog"
+          }
+        },
+        [
+          _vm._v(" "),
+          _c("v-card", { attrs: { height: "80vh" } }, [
+            _c("iframe", {
+              attrs: {
+                height: "100%",
+                src: "https://www.youtube.com/embed/Bvbmw7ckJS0",
+                frameborder: "0",
+                allow:
+                  "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                allowfullscreen: ""
+              }
+            })
+          ])
         ],
         1
       ),
@@ -6570,8 +6551,8 @@ var render = function() {
                       [
                         _c(
                           "v-col",
-                          { attrs: { cols: "md-7" } },
-                          [_c("v-img", { attrs: { src: "/matematika.png" } })],
+                          { attrs: { cols: "md-7 pl-11" } },
+                          [_c("v-img", { attrs: { src: "/studij_inf.jpg" } })],
                           1
                         ),
                         _vm._v(" "),
@@ -6589,7 +6570,7 @@ var render = function() {
                                 [_vm._v("Studij Informatike")]
                               ),
                               _vm._v(" "),
-                              _c("div", { staticClass: "justify-text pr-8" }, [
+                              _c("div", { staticClass: "justify-text" }, [
                                 _vm._v(
                                   "\n              U studiju informatike se stručni sadržaji realiziraju kroz obvezne i izborne kolegije.\n              Dopunjuju se metodičkim i pedagoško-psihološkim sadržajima. Cilj ovog studija je\n              osposobljavanje studenata za uspješno i društveno odgovorno prenošenje informatičkog znanja\n              na mlade naraštaje, uz samostalno korištenje najnovije računalne tehnologije u pripadajućim i\n              raznolikim informatičkim primjenama. Studij završava izradom diplomskog rada koji je\n              samostalna obrada nekog znanstvenog ili stručnog problema.\n              "
                                 ),
@@ -6680,16 +6661,10 @@ var render = function() {
                       "v-row",
                       { attrs: { align: "center" } },
                       [
-                        _c("v-col", { attrs: { cols: "md-2" } }),
-                        _vm._v(" "),
                         _c(
                           "v-col",
-                          { attrs: { cols: "md-3" } },
-                          [
-                            _c("v-img", {
-                              attrs: { src: "/matematika-informatika.png" }
-                            })
-                          ],
+                          { attrs: { cols: "md-7" } },
+                          [_c("v-img", { attrs: { src: "/matematika.png" } })],
                           1
                         ),
                         _vm._v(" "),
@@ -6712,24 +6687,7 @@ var render = function() {
                                   "\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam, corporis rerum nam consectetur tenetur aliquid eaque, qui minus atque minima commodi provident? Voluptatibus earum, quas dicta quam quisquam quidem?\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos harum placeat quis, nihil enim totam? Vero deleniti sequi officia nostrum, aut aliquam quia assumenda, nesciunt repellat sint fugit. Laudantium?\n            "
                                 )
                               ])
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              {
-                                staticClass: "text-center mb-6 mt-4",
-                                attrs: { justify: "center", align: "end" }
-                              },
-                              [
-                                _c("a", {
-                                  attrs: {
-                                    href:
-                                      "https://drive.google.com/file/d/0B8wtFjOJCVHtNFB4SFRENnZnMWZuZzQ1dlUzaVFtN2pSYm1J/view",
-                                    target: "_blank"
-                                  }
-                                })
-                              ]
-                            )
+                            ])
                           ],
                           1
                         )
@@ -63564,10 +63522,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
-/* harmony import */ var vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VHover */ "./node_modules/vuetify/lib/components/VHover/index.js");
-/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
-/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
+/* harmony import */ var vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VDialog */ "./node_modules/vuetify/lib/components/VDialog/index.js");
+/* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
+/* harmony import */ var vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VHover */ "./node_modules/vuetify/lib/components/VHover/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
 
 
 
@@ -63598,7 +63557,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_8__["VDivider"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__["VHover"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_11__["VImg"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VDialog: vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_8__["VDialog"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_9__["VDivider"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_10__["VHover"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__["VImg"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"]})
 
 
 /* hot reload */
@@ -63924,8 +63884,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-4\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-4\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <div class="bg">
+    <div class="">
     <!-- Komponenta za toolbar -->
     <toolbar />
 

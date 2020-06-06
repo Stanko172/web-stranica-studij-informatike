@@ -43,7 +43,7 @@
       <hr />
 
       <v-list shaped nav dense>
-        <v-list-item-group v-model="group" color="blue darken-4">
+        <v-list-item-group color="blue darken-4">
           <v-list-item v-for="item in menu" :key="item.title">
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>

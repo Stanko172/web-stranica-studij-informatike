@@ -90,11 +90,19 @@
         </v-row>
       </v-card>
     </v-hover>
+
+    <!--Switch info section-->
+
+    <SwitchInfo />
   </div>
 </template>
 
 <script>
+import SwitchInfo from '../components/Switch-info'
 export default {
+  components: {
+    SwitchInfo
+  },
   data: () => ({})
 };
 </script>

@@ -1,8 +1,20 @@
-import Vue from 'vue'
-import Vuetify from 'vuetify/lib'
+import Vue from 'vue';
+import Vuetify from 'vuetify/lib';
+
+import colors from 'vuetify/lib/util/colors';
 
 Vue.use(Vuetify)
 
-const opts = {}
+const opts = {
+  theme: {
+		themes: {
+			light: {
+				primary: colors.indigo.darken1, // #E53935
+				secondary: colors.green.darken1, // #FFCDD2
+				accent: colors.indigo.base,
+			},
+		},
+	},
+}
 
-export default new Vuetify(opts)
+export default new Vuetify(opts);

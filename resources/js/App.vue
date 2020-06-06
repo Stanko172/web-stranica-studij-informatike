@@ -3,25 +3,11 @@
     <!-- Komponenta za toolbar -->
     <toolbar />
     <!--pozadina sadrzaja <Landing /> -->
-
-    <router-view></router-view>
-
-    <!--Ovaj kod ispod je samo za demonstraciju, prilikom izrade početne stranice izbrisati (izmedu v-app)-->
-
-    <v-col class="text-center" cols="12" sm="4">
-      <div class="my-2">
-        <v-btn depressed>Normal</v-btn>
-      </div>
-      <div class="my-2">
-        <v-btn depressed color="primary">Primary</v-btn>
-      </div>
-      <div class="my-2">
-        <v-btn depressed color="error">Error</v-btn>
-      </div>
-      <div class="my-2">
-        <v-btn depressed disabled>Disabled</v-btn>
-      </div>
-    </v-col>
+    <v-container style="margin-top: 52px">
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+    </v-container>
   </v-app>
 </template>
 
@@ -39,4 +25,12 @@ export default {
 </script>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

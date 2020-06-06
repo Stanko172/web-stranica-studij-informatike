@@ -9,7 +9,7 @@
       <template v-slot:extension>
         <v-tabs>
           <v-tab to="/">Raspored</v-tab>
-          <v-tab to="obavijesti">Nastavnici</v-tab>
+          <v-tab to="/obavijesti">Nastavnici</v-tab>
           <v-tab to="/nastavni_plan">Nastavni plan</v-tab>
         </v-tabs>
       </template>
@@ -86,7 +86,8 @@
       </v-btn>
     </v-toolbar>
 
-    <v-navigation-drawer v-model="sidebar" absolute temporary>
+    <!-- ne koristi se nigdje ??
+      <v-navigation-drawer v-model="sidebar" absolute temporary>
       <v-list-item ma-2 pa-2>
         <v-list-item-content>
           <v-list-item-title class="title">
@@ -110,7 +111,8 @@
           </v-list-item>
         </v-list-item-group>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> 
+    -->
   </div>
 </template>
 

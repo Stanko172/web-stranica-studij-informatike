@@ -5,11 +5,11 @@
     <toolbar />
 
      
-    <v-container style="margin-top: 52px">
+    <!-- <v-container style="margin-top: 52px"> -->
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
-    </v-container>
+    <!-- </v-container> -->
     </div>
   </v-app>
 </template>
@@ -34,11 +34,11 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-.bg{
+/* .bg{
   background-image: url("/bg1.png");
   background-size: cover;
   background-position: center center;
   position: relative;
   height: auto;
-}
+} */
 </style>

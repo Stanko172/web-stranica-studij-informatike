@@ -128,9 +128,9 @@ export default {
       { title: "ISS", path: "/", icon: "fas fa-angle-right" },
       { title: "SUMARUM", path: "/", icon: "fas fa-angle-right" },
       { title: "Odaberi znanje!", path: "/", icon: "fas fa-angle-right" },
-      { title: "Udruga '<Switch>'", path: "/", icon: "fas fa-angle-right" },
+      { title: "Udruga  </SWITCH>", path: "/", icon: "fas fa-angle-right" },
       { title: "Akademski kalendar", path: "/", icon: "fas fa-angle-right" },
-      { title: "Troskovi studija", path: "/", icon: "fas fa-angle-right" },
+      { title: "Troškovi studija", path: "/", icon: "fas fa-angle-right" },
       { title: "O studiju", path: "/", icon: "fas fa-angle-right" }
     ]
   })

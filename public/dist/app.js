@@ -2093,9 +2093,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      link_yt: "https://www.youtube.com/channel/UCAxy1ltx_vV3sCPjmvVaWHQ",
+      link_fb: "https://www.facebook.com/fpmoz.ba/",
+      link_insta: "https://www.instagram.com/fpmoz.mostar/?hl=hr",
       item: {
         color: "red"
       }
@@ -2226,40 +2249,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       sidebar: false,
       menu_title: "Izbornik",
+      link_yt: "https://www.youtube.com/channel/UCAxy1ltx_vV3sCPjmvVaWHQ",
+      link_fb: "https://www.facebook.com/fpmoz.ba/",
+      link_insta: "https://www.instagram.com/fpmoz.mostar/?hl=hr",
       menu: [{
         title: "NOVOSTI",
         path: "/",
@@ -2277,7 +2274,7 @@ __webpack_require__.r(__webpack_exports__);
         path: "/",
         icon: "fas fa-angle-right"
       }, {
-        title: "Udruga  </SWITCH>",
+        title: "Udruga '<Switch>'",
         path: "/",
         icon: "fas fa-angle-right"
       }, {
@@ -2285,7 +2282,7 @@ __webpack_require__.r(__webpack_exports__);
         path: "/",
         icon: "fas fa-angle-right"
       }, {
-        title: "Troškovi studija",
+        title: "Troskovi studija",
         path: "/",
         icon: "fas fa-angle-right"
       }, {
@@ -2502,6 +2499,93 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2513,7 +2597,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      mathFileUrl: 'https://drive.google.com/file/d/0B8wtFjOJCVHtNFB4SFRENnZnMWZuZzQ1dlUzaVFtN2pSYm1J/view'
+      mathFileUrl: "https://drive.google.com/file/d/0B8wtFjOJCVHtNFB4SFRENnZnMWZuZzQ1dlUzaVFtN2pSYm1J/view"
     };
   }
 });
@@ -4502,7 +4586,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.switch__card{\n        background: white;\n        box-shadow: 2px 8px 15px 0.2px #888888;\n}\n.switch-info-icons{\n    margin-top: 5em;\n}\n.card-switch-text{\n    color: #1f4386;\n    font-size: 1em;\n}\n.fa-youtube, .fa-facebook, .fa-instagram{\n    font-size: 2em;\n}\n.switch-info-icons{\n    margin-bottom: 5em;\n}\n@media only screen and (min-width: 960px) {\n.card-switch-text{\n      font-size: 1em;\n}\n.switch__card{\n        border-radius: 15px 50px 30px;\n        padding: 2em;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.switch__card {\r\n  background: white;\r\n  box-shadow: 2px 8px 15px 0.2px #888888;\n}\n.switch-info-icons {\r\n  margin-top: 5em;\n}\n.card-switch-text {\r\n  color: #1f4386;\r\n  font-size: 1em;\n}\n.fa-youtube,\r\n.fa-facebook,\r\n.fa-instagram {\r\n  font-size: 2em;\n}\n.switch-info-icons {\r\n  margin-bottom: 5em;\n}\n@media only screen and (min-width: 960px) {\n.card-switch-text {\r\n    font-size: 1em;\n}\n.switch__card {\r\n    border-radius: 15px 50px 30px;\r\n    padding: 2em;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -4540,7 +4624,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.justify-text {\r\n  text-align: justify;\n}\n#app .row.align-center div.col.col-md-7 .v-responsive.v-image {\r\n  margin-left: 3px;\n}\n#app .area-around {\r\n  padding: 7em 0 7em 0;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.justify-text {\r\n  text-align: justify;\n}\n#app .row.align-center div.col.col-md-7 .v-responsive.v-image {\r\n  margin-left: 3px;\n}\n#app .area-around {\r\n  padding: 7em 0 7em 0;\n}\r\n", ""]);
 
 // exports
 
@@ -5962,8 +6046,7 @@ var render = function() {
                             "v-btn",
                             _vm._g(
                               {
-                                staticClass: "mb-10",
-                                staticStyle: { "margin-right": "1em" },
+                                staticClass: "mb-5",
                                 attrs: { color: "primary", rounded: "" }
                               },
                               on
@@ -6180,14 +6263,14 @@ var render = function() {
                           _c("v-col", [
                             _c("p", { staticClass: "card-switch-text" }, [
                               _c("i", { staticClass: "far fa-check-circle" }),
-                              _vm._v("  programiranje")
+                              _vm._v(" programiranje\n              ")
                             ])
                           ]),
                           _vm._v(" "),
                           _c("v-col", [
                             _c("p", { staticClass: "card-switch-text" }, [
                               _c("i", { staticClass: "far fa-check-circle" }),
-                              _vm._v("  tehnička podrška")
+                              _vm._v(" tehnička podrška\n              ")
                             ])
                           ])
                         ],
@@ -6205,7 +6288,13 @@ var render = function() {
                         "v-btn",
                         {
                           staticClass: "mx-2",
-                          attrs: { fab: "", dark: "", color: "indigo" }
+                          attrs: {
+                            fab: "",
+                            dark: "",
+                            color: "indigo",
+                            href: _vm.link_yt,
+                            target: "_blank"
+                          }
                         },
                         [_c("i", { staticClass: "fab fa-youtube" })]
                       ),
@@ -6214,7 +6303,13 @@ var render = function() {
                         "v-btn",
                         {
                           staticClass: "mx-2",
-                          attrs: { fab: "", dark: "", color: "indigo" }
+                          attrs: {
+                            fab: "",
+                            dark: "",
+                            color: "indigo",
+                            href: _vm.link_insta,
+                            target: "_blank"
+                          }
                         },
                         [_c("i", { staticClass: "fab fa-instagram" })]
                       ),
@@ -6223,7 +6318,13 @@ var render = function() {
                         "v-btn",
                         {
                           staticClass: "mx-2",
-                          attrs: { fab: "", dark: "", color: "indigo" }
+                          attrs: {
+                            fab: "",
+                            dark: "",
+                            color: "indigo",
+                            href: _vm.link_fb,
+                            target: "_blank"
+                          }
                         },
                         [_c("i", { staticClass: "fab fa-facebook" })]
                       )
@@ -6237,7 +6338,7 @@ var render = function() {
               _c("v-flex", { attrs: { xs12: "", md6: "" } }, [
                 _c("div", { staticClass: "mx-5 text-justify mb-5" }, [
                   _vm._v(
-                    "Switch je udruga studenata koji nastoje poboljšati znanje i vještine studenata na području informatike i tehnike. Studentima se pruža prilika da se uključe u zajedničko učenje, međusobno razmjenjuju materijale i sudjeluju u događajima koje udruga organizira. U nastojanju povezivanja studenata Sveučilišta udruga pokušava omogućiti otvorenu razmjenu ideja, iskustava znanja. Cilj udruge je promicati nove tehnologije i cjeloživotno učenje kroz različite radionice i projekte. Želimo podijeliti znanje i entuzijazam koji imamo velikom broju ljudi, motivirati zainteresirane studente da samostalno nastave istraživati i učiti. Udruga organizira brojne događaje od kojih je najpoznatiji dan matematike informatike. Studenti matematike, informatike i tehnike u suranji sa profesorima i asistenima organiziraju i smišljaju sadržaj koji se predstavlja učenicima srednjih škola kako bi se probudio interes prema studijima i mogućnostima. Učenicima su predstavljeni roboti, uređaji i tehnologije koji su dostupni na fakultetu I koji podižu razinu i kvalitetu obrazovanja kroz konkretnu primjenu. Udruga Switch organizira besplatne cikluse predavanja o osnovama programiranja, razvoju za web, robotiku, dizajn, ali i različita natjecanja i projekte. Također, udruga Switch se posobno ponosi svojim članovima Tehničke podrške udruge Switch koja samostalno održava i servisira računalne učionice FPMOZ-a. Članovi udruge se trude posjećivati što više događaja vezanih za IT nauke, na području Mostara ali i šire. Kroz članstvo u udruzi studenti grade vještine komunikacije, prezentiranja, osjećaj odgovornosti i obzirnosti jedni prema drugima. Biti Switcher podrazumijeva snažnu volju i sposobnost učenja, rad u timu i izrazitu komunikaciju i sigurnu zabavu."
+                    "Switch je udruga studenata koji nastoje poboljšati znanje i vještine studenata na području informatike i tehnike. Studentima se pruža prilika da se uključe u zajedničko učenje, međusobno razmjenjuju materijale i sudjeluju u događajima koje udruga organizira. U nastojanju povezivanja studenata Sveučilišta udruga pokušava omogućiti otvorenu razmjenu ideja, iskustava znanja. Cilj udruge je promicati nove tehnologije i cjeloživotno učenje kroz različite radionice i projekte. Želimo podijeliti znanje i entuzijazam koji imamo velikom broju ljudi, motivirati zainteresirane studente da samostalno nastave istraživati i učiti. Udruga organizira brojne događaje od kojih je najpoznatiji dan matematike informatike. Studenti matematike, informatike i tehnike u suranji sa profesorima i asistenima organiziraju i smišljaju sadržaj koji se predstavlja učenicima srednjih škola kako bi se probudio interes prema studijima i mogućnostima. Učenicima su predstavljeni roboti, uređaji i tehnologije koji su dostupni na fakultetu I koji podižu razinu i kvalitetu obrazovanja kroz konkretnu primjenu. Udruga Switch organizira besplatne cikluse predavanja o osnovama programiranja, razvoju za web, robotiku, dizajn, ali i različita natjecanja i projekte. Također, udruga Switch se posobno ponosi svojim članovima Tehničke podrške udruge Switch koja samostalno održava i servisira računalne učionice FPMOZ-a. Članovi udruge se trude posjećivati šo više događaja vezanih za IT nauke, na području Mostara ali i šire. Kroz članstvo u udruzi studenti grade vještine komunikacije, prezentiranja, osjećaj odgovornosti i obzirnosti jedni prema drugima. Biti Switcher podrazumijeva snažnu volju i sposobnost učenja, rad u timu i izrazitu komunikaciju i sigurnu zabavu."
                   )
                 ]),
                 _vm._v(" "),
@@ -6246,9 +6347,57 @@ var render = function() {
                   { staticClass: "mx-5" },
                   [
                     _c(
-                      "v-btn",
-                      { attrs: { block: "", color: "primary", dark: "" } },
-                      [_vm._v("Virtualni dan MI")]
+                      "v-dialog",
+                      {
+                        attrs: { scrollable: "" },
+                        scopedSlots: _vm._u([
+                          {
+                            key: "activator",
+                            fn: function(ref) {
+                              var on = ref.on
+                              return [
+                                _c(
+                                  "v-btn",
+                                  _vm._g(
+                                    {
+                                      attrs: {
+                                        block: "",
+                                        color: "primary",
+                                        dark: ""
+                                      }
+                                    },
+                                    on
+                                  ),
+                                  [_vm._v("Virtualni dan MI")]
+                                )
+                              ]
+                            }
+                          }
+                        ]),
+                        model: {
+                          value: _vm.dialog,
+                          callback: function($$v) {
+                            _vm.dialog = $$v
+                          },
+                          expression: "dialog"
+                        }
+                      },
+                      [
+                        _vm._v(" "),
+                        _c("v-card", { attrs: { height: "80vh" } }, [
+                          _c("iframe", {
+                            attrs: {
+                              height: "100%",
+                              src: "https://www.youtube.com/embed/20t4XDAyWso",
+                              frameborder: "0",
+                              allow:
+                                "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                              allowfullscreen: ""
+                            }
+                          })
+                        ])
+                      ],
+                      1
                     )
                   ],
                   1
@@ -6259,9 +6408,57 @@ var render = function() {
                   { staticClass: "mx-5 mt-3" },
                   [
                     _c(
-                      "v-btn",
-                      { attrs: { block: "", color: "primary", dark: "" } },
-                      [_vm._v("SPARK Hackathon")]
+                      "v-dialog",
+                      {
+                        attrs: { scrollable: "" },
+                        scopedSlots: _vm._u([
+                          {
+                            key: "activator",
+                            fn: function(ref) {
+                              var on = ref.on
+                              return [
+                                _c(
+                                  "v-btn",
+                                  _vm._g(
+                                    {
+                                      attrs: {
+                                        block: "",
+                                        color: "primary",
+                                        dark: ""
+                                      }
+                                    },
+                                    on
+                                  ),
+                                  [_vm._v("SPARK Hackathon")]
+                                )
+                              ]
+                            }
+                          }
+                        ]),
+                        model: {
+                          value: _vm.dialog,
+                          callback: function($$v) {
+                            _vm.dialog = $$v
+                          },
+                          expression: "dialog"
+                        }
+                      },
+                      [
+                        _vm._v(" "),
+                        _c("v-card", { attrs: { height: "80vh" } }, [
+                          _c("iframe", {
+                            attrs: {
+                              height: "100%",
+                              src: "https://www.youtube.com/embed/uuTPr22kWH4",
+                              frameborder: "0",
+                              allow:
+                                "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                              allowfullscreen: ""
+                            }
+                          })
+                        ])
+                      ],
+                      1
                     )
                   ],
                   1
@@ -6401,21 +6598,23 @@ var render = function() {
           _vm._v(" "),
           _c(
             "v-btn",
-            { attrs: { text: "", icon: "" } },
+            {
+              attrs: { text: "", icon: "", href: _vm.link_fb, target: "_blank" }
+            },
             [_c("v-icon", [_vm._v("fab fa-facebook-square")])],
             1
           ),
           _vm._v(" "),
           _c(
             "v-btn",
-            { attrs: { icon: "" } },
+            { attrs: { icon: "", href: _vm.link_insta, target: "_blank" } },
             [_c("v-icon", [_vm._v("fab fa-instagram")])],
             1
           ),
           _vm._v(" "),
           _c(
             "v-btn",
-            { attrs: { icon: "" } },
+            { attrs: { icon: "", href: _vm.link_yt, target: "_blank" } },
             [_c("v-icon", [_vm._v("fab fa-youtube")])],
             1
           )
@@ -6438,7 +6637,6 @@ var render = function() {
         [
           _c(
             "v-list-item",
-            { attrs: { "ma-2": "", "pa-2": "" } },
             [
               _c(
                 "v-list-item-content",
@@ -6449,9 +6647,7 @@ var render = function() {
                     [
                       _c("v-icon", [_vm._v("fa-graduation-cap")]),
                       _vm._v(
-                        "\n          \n          " +
-                          _vm._s(_vm.menu_title) +
-                          "\n        "
+                        "\n          " + _vm._s(_vm.menu_title) + "\n        "
                       )
                     ],
                     1
@@ -6564,7 +6760,7 @@ var render = function() {
               staticClass: "font-weight-medium",
               staticStyle: { "font-size": "25px" }
             },
-            [_vm._v("Informatika")]
+            [_vm._v("INFORMATIKA")]
           ),
           _vm._v(" "),
           _vm._v(" "),
@@ -6572,21 +6768,23 @@ var render = function() {
           _vm._v(" "),
           _c(
             "v-btn",
-            { attrs: { text: "", icon: "" } },
+            {
+              attrs: { text: "", icon: "", href: _vm.link_fb, target: "_blank" }
+            },
             [_c("v-icon", [_vm._v("fab fa-facebook-square")])],
             1
           ),
           _vm._v(" "),
           _c(
             "v-btn",
-            { attrs: { icon: "" } },
+            { attrs: { icon: "", href: _vm.link_insta, target: "_blank" } },
             [_c("v-icon", [_vm._v("fab fa-instagram")])],
             1
           ),
           _vm._v(" "),
           _c(
             "v-btn",
-            { attrs: { icon: "" } },
+            { attrs: { icon: "", href: _vm.link_yt, target: "_blank" } },
             [_c("v-icon", [_vm._v("fab fa-youtube")])],
             1
           )
@@ -6884,7 +7082,7 @@ var render = function() {
                           [
                             _c(
                               "v-col",
-                              { attrs: { cols: "md-7 pl-11" } },
+                              { attrs: { cols: "md-7 pl-8" } },
                               [
                                 _c("v-img", {
                                   attrs: { src: "/studij_inf.jpg" }
@@ -6909,11 +7107,11 @@ var render = function() {
                                   _vm._v(" "),
                                   _c("div", { staticClass: "justify-text" }, [
                                     _vm._v(
-                                      "\n              U studiju informatike se stručni sadržaji realiziraju kroz obvezne i izborne kolegije.\n              Dopunjuju se metodičkim i pedagoško-psihološkim sadržajima. Cilj ovog studija je\n              osposobljavanje studenata za uspješno i društveno odgovorno prenošenje informatičkog znanja\n              na mlade naraštaje, uz samostalno korištenje najnovije računalne tehnologije u pripadajućim i\n              raznolikim informatičkim primjenama. Studij završava izradom diplomskog rada koji je\n              samostalna obrada nekog znanstvenog ili stručnog problema.\n              "
+                                      "\n                U studiju informatike se stručni sadržaji realiziraju kroz obvezne i izborne kolegije.\n                Dopunjuju se metodičkim i pedagoško-psihološkim sadržajima. Cilj ovog studija je\n                osposobljavanje studenata za uspješno i društveno odgovorno prenošenje informatičkog znanja\n                na mlade naraštaje, uz samostalno korištenje najnovije računalne tehnologije u pripadajućim i\n                raznolikim informatičkim primjenama. Studij završava izradom diplomskog rada koji je\n                samostalna obrada nekog znanstvenog ili stručnog problema.\n                "
                                     ),
                                     _c("br"),
                                     _vm._v(
-                                      "E-MAIL: informatika@fpmoz.sum.ba\n            "
+                                      "E-MAIL: informatika@fpmoz.sum.ba\n              "
                                     )
                                   ])
                                 ]),
@@ -6923,51 +7121,172 @@ var render = function() {
                                   { staticClass: "text-center mb-6 mt-4" },
                                   [
                                     _c(
-                                      "a",
+                                      "v-dialog",
                                       {
-                                        attrs: {
-                                          href: _vm.mathFileUrl,
-                                          target: "_blank"
-                                        }
+                                        attrs: { scrollable: "" },
+                                        scopedSlots: _vm._u(
+                                          [
+                                            {
+                                              key: "activator",
+                                              fn: function(ref) {
+                                                var on = ref.on
+                                                return [
+                                                  _c(
+                                                    "v-btn",
+                                                    _vm._g(
+                                                      {
+                                                        staticClass: "mb-5",
+                                                        staticStyle: {
+                                                          "margin-right": "1em"
+                                                        },
+                                                        attrs: {
+                                                          color: "primary",
+                                                          rounded: ""
+                                                        }
+                                                      },
+                                                      on
+                                                    ),
+                                                    [
+                                                      _c(
+                                                        "v-icon",
+                                                        {
+                                                          staticClass:
+                                                            "white--text",
+                                                          attrs: { left: "" }
+                                                        },
+                                                        [_vm._v("mdi-play")]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "button-text"
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "Što kažu studenti"
+                                                          )
+                                                        ]
+                                                      )
+                                                    ],
+                                                    1
+                                                  )
+                                                ]
+                                              }
+                                            }
+                                          ],
+                                          null,
+                                          true
+                                        )
                                       },
                                       [
+                                        _vm._v(" "),
                                         _c(
-                                          "v-btn",
-                                          {
-                                            attrs: {
-                                              color: "primary",
-                                              rounded: ""
-                                            }
-                                          },
+                                          "v-card",
+                                          { attrs: { height: "78vh" } },
                                           [
-                                            _c(
-                                              "v-icon",
-                                              {
-                                                staticClass: "white--text",
-                                                attrs: { left: "" }
-                                              },
-                                              [_vm._v("mdi-file-document")]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "span",
-                                              {
-                                                staticClass:
-                                                  "button-text white--text"
-                                              },
-                                              [
-                                                _vm._v(
-                                                  "Pregledaj letak studija"
-                                                )
-                                              ]
-                                            )
+                                            _c("iframe", {
+                                              attrs: {
+                                                height: "100%",
+                                                src:
+                                                  "https://www.youtube.com/embed/yQNdD3f0tSc",
+                                                frameborder: "0",
+                                                allow:
+                                                  "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                                                allowfullscreen: ""
+                                              }
+                                            })
+                                          ]
+                                        )
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "v-dialog",
+                                      {
+                                        attrs: { scrollable: "" },
+                                        scopedSlots: _vm._u(
+                                          [
+                                            {
+                                              key: "activator",
+                                              fn: function(ref) {
+                                                var on = ref.on
+                                                return [
+                                                  _c(
+                                                    "v-btn",
+                                                    _vm._g(
+                                                      {
+                                                        staticClass: "mb-5",
+                                                        staticStyle: {
+                                                          "margin-right": "1em"
+                                                        },
+                                                        attrs: {
+                                                          color: "primary",
+                                                          rounded: ""
+                                                        }
+                                                      },
+                                                      on
+                                                    ),
+                                                    [
+                                                      _c(
+                                                        "v-icon",
+                                                        {
+                                                          staticClass:
+                                                            "white--text",
+                                                          attrs: { left: "" }
+                                                        },
+                                                        [_vm._v("mdi-play")]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "span",
+                                                        {
+                                                          staticClass:
+                                                            "button-text"
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            "Što kažu profesori"
+                                                          )
+                                                        ]
+                                                      )
+                                                    ],
+                                                    1
+                                                  )
+                                                ]
+                                              }
+                                            }
                                           ],
-                                          1
+                                          null,
+                                          true
+                                        )
+                                      },
+                                      [
+                                        _vm._v(" "),
+                                        _c(
+                                          "v-card",
+                                          { attrs: { height: "78vh" } },
+                                          [
+                                            _c("iframe", {
+                                              attrs: {
+                                                height: "100%",
+                                                src:
+                                                  "https://www.youtube.com/embed/GWFE0PqTQic",
+                                                frameborder: "0",
+                                                allow:
+                                                  "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+                                                allowfullscreen: ""
+                                              }
+                                            })
+                                          ]
                                         )
                                       ],
                                       1
                                     )
-                                  ]
+                                  ],
+                                  1
                                 )
                               ],
                               1
@@ -7007,17 +7326,6 @@ var render = function() {
                           [
                             _c(
                               "v-col",
-                              { attrs: { cols: "md-7" } },
-                              [
-                                _c("v-img", {
-                                  attrs: { src: "/matematika.png" }
-                                })
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-col",
                               { attrs: { cols: "md-5" } },
                               [
                                 _c("v-card-text", [
@@ -7032,10 +7340,21 @@ var render = function() {
                                   _vm._v(" "),
                                   _c("div", { staticClass: "justify-text" }, [
                                     _vm._v(
-                                      "\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam, corporis rerum nam consectetur tenetur aliquid eaque, qui minus atque minima commodi provident? Voluptatibus earum, quas dicta quam quisquam quidem?\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos harum placeat quis, nihil enim totam? Vero deleniti sequi officia nostrum, aut aliquam quia assumenda, nesciunt repellat sint fugit. Laudantium?\n            "
+                                      "\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam, corporis rerum nam consectetur tenetur aliquid eaque, qui minus atque minima commodi provident? Voluptatibus earum, quas dicta quam quisquam quidem?\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos harum placeat quis, nihil enim totam? Vero deleniti sequi officia nostrum, aut aliquam quia assumenda, nesciunt repellat sint fugit. Laudantium?\n              "
                                     )
                                   ])
                                 ])
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-col",
+                              { attrs: { cols: "md-7" } },
+                              [
+                                _c("v-img", {
+                                  attrs: { src: "/matematika.png" }
+                                })
                               ],
                               1
                             )
@@ -7053,7 +7372,110 @@ var render = function() {
           _vm._v(" "),
           _c("v-divider", { staticStyle: { margin: "50px 0 50px 0" } }),
           _vm._v(" "),
-          _c("SwitchInfo")
+          _c("SwitchInfo"),
+          _vm._v(" "),
+          _c("v-divider", { staticStyle: { margin: "50px 0 50px 0" } }),
+          _vm._v(" "),
+          _c("v-hover", {
+            attrs: { "close-delay": "80" },
+            scopedSlots: _vm._u([
+              {
+                key: "default",
+                fn: function(ref) {
+                  var hover = ref.hover
+                  return [
+                    _c(
+                      "v-card",
+                      { attrs: { shaped: "", elevation: hover ? 8 : 2 } },
+                      [
+                        _c(
+                          "v-row",
+                          { attrs: { align: "center" } },
+                          [
+                            _c(
+                              "v-col",
+                              { attrs: { cols: "md-5" } },
+                              [
+                                _c("v-card-text", [
+                                  _c(
+                                    "p",
+                                    {
+                                      staticClass:
+                                        "display-1 primary--text font-weight-medium"
+                                    },
+                                    [_vm._v("Upis na Studij informatike")]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "justify-text" }, [
+                                    _vm._v(
+                                      "\n                Cilj preddiplomskog Studija informatike je razvoj stručnih računalnih znanstvenika i programera.\n                Od akademske 2019./2020. godine studij će se izvoditi s naglaskom na praktično rješavanje problema.\n                Nastavni plan i program se bazira na praktičnom riješavanju problema uz pomoć programskih jezika kao\n                što je Python, Java i C/C++ s naglaskom na otvorene tehnologije. Upoznajte se s programskim okvirima\n                za razvoj igrica kao što su PyGame i Phaser.io, naučite kako napraviti web stranicu te istu postaviti\n                na poslužitelj. Naučite se programskim jezicima za upravljenje podacima kao što je SQL.\n                Kako razmišljati kao računalni znanstvenik i postati programer.\n              "
+                                    )
+                                  ])
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "text-center mb-6 mt-4" },
+                                  [
+                                    _c(
+                                      "v-btn",
+                                      {
+                                        attrs: {
+                                          color: "primary",
+                                          rounded: "",
+                                          href: _vm.mathFileUrl,
+                                          target: "_blank"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "v-icon",
+                                          {
+                                            staticClass: "white--text",
+                                            attrs: { left: "" }
+                                          },
+                                          [_vm._v("mdi-file-document")]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "span",
+                                          {
+                                            staticClass:
+                                              "button-text white--text"
+                                          },
+                                          [_vm._v("Pregledaj letak studija")]
+                                        )
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "v-col",
+                              { attrs: { cols: "md-7 pr-8" } },
+                              [
+                                _c("v-img", {
+                                  attrs: { src: "/informatika1.png" }
+                                })
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  ]
+                }
+              }
+            ])
+          })
         ],
         1
       ),
@@ -7061,35 +7483,65 @@ var render = function() {
       _c("SwitchParallax"),
       _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br")
     ],
     1
@@ -63678,7 +64130,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
+/* harmony import */ var vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VDialog */ "./node_modules/vuetify/lib/components/VDialog/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
 
 
 
@@ -63710,7 +64163,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardSubtitle: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardSubtitle"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VContainer"],VFlex: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VFlex"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_8__["VImg"],VLayout: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VLayout"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardSubtitle: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardSubtitle"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VContainer"],VDialog: vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_8__["VDialog"],VFlex: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VFlex"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_9__["VImg"],VLayout: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VLayout"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"]})
 
 
 /* hot reload */
@@ -64115,10 +64569,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
 /* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
-/* harmony import */ var vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VHover */ "./node_modules/vuetify/lib/components/VHover/index.js");
-/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
-/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
+/* harmony import */ var vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VDialog */ "./node_modules/vuetify/lib/components/VDialog/index.js");
+/* harmony import */ var vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VDivider */ "./node_modules/vuetify/lib/components/VDivider/index.js");
+/* harmony import */ var vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VHover */ "./node_modules/vuetify/lib/components/VHover/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VImg */ "./node_modules/vuetify/lib/components/VImg/index.js");
 
 
 
@@ -64150,7 +64605,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VContainer"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_8__["VDivider"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__["VHover"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_11__["VImg"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VContainer"],VDialog: vuetify_lib_components_VDialog__WEBPACK_IMPORTED_MODULE_8__["VDialog"],VDivider: vuetify_lib_components_VDivider__WEBPACK_IMPORTED_MODULE_9__["VDivider"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_10__["VHover"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_11__["VIcon"],VImg: vuetify_lib_components_VImg__WEBPACK_IMPORTED_MODULE_12__["VImg"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__["VRow"]})
 
 
 /* hot reload */
@@ -64478,8 +64934,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-5\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-5\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

@@ -6,7 +6,7 @@
       <v-row class="justify-center area-around">
         <v-dialog scrollable>
           <template v-slot:activator="{ on }">
-            <v-btn color="primary" v-on="on" style="margin-right: 1em" rounded class="mb-10">
+            <v-btn color="primary" v-on="on"  rounded class="mb-5">
               <v-icon left class="white--text">mdi-play</v-icon>
               <span class="button-text">Promo Video</span>
             </v-btn>

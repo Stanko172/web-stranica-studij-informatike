@@ -34,6 +34,9 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
+.container-margin {
+  margin-top: 70px;
+}
 /* .bg{
   background-image: url("/bg1.png");
   background-size: cover;

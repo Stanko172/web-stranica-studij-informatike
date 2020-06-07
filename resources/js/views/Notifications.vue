@@ -1,37 +1,39 @@
 <template>
-  <v-app v-show="notifications.length">
+  <v-container class="container-margin">
+    <v-app v-show="notifications.length">
 
-    <v-hover
-      v-slot:default="{ hover }"
-      close-delay="80"
-      v-for="(notification, i) in visiblePages"
-      :key="i"
-    >
-    <v-card
-      class="mx-auto mt-6"
-      v-model="page"
-      shaped
-      outlined
-      width="90%"
-      :elevation="hover ? 8 : 2"
-    >
-      <v-card-text>
-        <p class="display-1" color="blue darken-1">{{ notification.title }}</p>
-        <p class="mt-n3">{{ formatDate(notification.created) }}</p>
-        <div class="text--primary" v-html="notification.introtext"></div>
-      </v-card-text>
-      <v-card-actions class="float-right">
-        <v-btn text color="deep-purple accent-4">Opširnije</v-btn>
-      </v-card-actions>
-    </v-card>
-    </v-hover>
-    
-    <v-pagination
-      v-model="page"
-      :length="Math.ceil(notifications.length/perPage)"
-      class="pagination-margin"
-    ></v-pagination>
-  </v-app>
+      <v-hover
+        v-slot:default="{ hover }"
+        close-delay="80"
+        v-for="(notification, i) in visiblePages"
+        :key="i"
+      >
+      <v-card
+        class="mx-auto mt-6"
+        v-model="page"
+        shaped
+        outlined
+        width="90%"
+        :elevation="hover ? 8 : 2"
+      >
+        <v-card-text>
+          <p class="display-1" color="blue darken-1">{{ notification.title }}</p>
+          <p class="mt-n3">{{ formatDate(notification.created) }}</p>
+          <div class="text--primary" v-html="notification.introtext"></div>
+        </v-card-text>
+        <v-card-actions class="float-right">
+          <v-btn text color="deep-purple accent-4">Opširnije</v-btn>
+        </v-card-actions>
+      </v-card>
+      </v-hover>
+      
+      <v-pagination
+        v-model="page"
+        :length="Math.ceil(notifications.length/perPage)"
+        class="pagination-margin"
+      ></v-pagination>
+    </v-app>
+  </v-container>
 </template>
 
 <script>

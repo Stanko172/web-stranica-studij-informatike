@@ -1,6 +1,6 @@
 <template>
 	<v-app>
-		<v-container>
+		<v-container class="container-margin">
 			<v-timeline :dense="$vuetify.breakpoint.smAndDown">
 				<v-timeline-item v-for="(item, i) in items" :key="i">
 					<template v-slot:opposite>

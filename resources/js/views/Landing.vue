@@ -101,15 +101,25 @@
     <!--Switch info section-->
 
     <SwitchInfo />
+
     </v-container>
+
+    <!--Switch parallax section-->
+    <SwitchParallax />
+
+    <!--Testni <br />, izbrisati kasnije-->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
   </div>
 </template>
 
 <script>
 import SwitchInfo from '../components/Switch-info'
+import SwitchParallax from '../components/Switch-parallax'
 export default {
   components: {
-    SwitchInfo
+    SwitchInfo,
+    SwitchParallax
   },
   data: () => ({
     dialog: false,

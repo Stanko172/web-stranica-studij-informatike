@@ -93,6 +93,14 @@
       <!--Switch info section-->
 
       <SwitchInfo />
+    
+    </v-container>
+
+      <!--Switch parallax section-->
+
+      <SwitchParallax />
+
+    <v-container>
 
       <v-divider style="margin: 50px 0 50px 0"></v-divider>
 
@@ -128,41 +136,13 @@
       </v-hover>
     </v-container>
 
-    <!--Switch parallax section-->
-    <SwitchParallax />
+    <!--Sekcija o procelniku studija informatike-->
 
-    <!--Testni <br />, izbrisati kasnije-->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <HeadInfo />
+
+    <!--Footer-->
+
+    <Footer />
   </div>
 </template>
 
@@ -170,12 +150,16 @@
 import SwitchInfo from "../components/Switch-info";
 import SwitchParallax from "../components/Switch-parallax";
 import Heading from "../components/Heading.vue";
+import HeadInfo from "../components/Head-info.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   components: {
     SwitchInfo,
     SwitchParallax,
-    Heading
+    Heading,
+    HeadInfo,
+    Footer
   },
   data: () => ({
     mathFileUrl:

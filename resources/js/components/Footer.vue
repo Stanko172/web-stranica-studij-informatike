@@ -26,4 +26,11 @@ export default {
     color: white;
 }
 
+@media only screen and (max-width: 960px) {
+  .footer p{ 
+    text-align: center;
+    font-size: 0.7em;
+}
+}
+
 </style>

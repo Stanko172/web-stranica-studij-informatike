@@ -4619,7 +4619,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.footer[data-v-61a7c374]{\r\n    display: flex;           \r\n    flex-direction: column;  \r\n    justify-content: center; \r\n    align-items: center;\r\n    height: 50px;\r\n    width: 100vw;\r\n    background: #1f4386;\n}\n.footer p[data-v-61a7c374]{ \r\n    color: white;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.footer[data-v-61a7c374]{\r\n    display: flex;           \r\n    flex-direction: column;  \r\n    justify-content: center; \r\n    align-items: center;\r\n    height: 50px;\r\n    width: 100vw;\r\n    background: #1f4386;\n}\n.footer p[data-v-61a7c374]{ \r\n    color: white;\n}\n@media only screen and (max-width: 960px) {\n.footer p[data-v-61a7c374]{ \r\n    text-align: center;\r\n    font-size: 0.7em;\n}\n}\r\n\r\n", ""]);
 
 // exports
 

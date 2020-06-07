@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="bg" style="padding-top: 100px;">
-      <v-container>
+      <v-container class="landing-container">
       <h1 class="primary--text display-3 font-weight-bold text-center">Dobrodošli na studij Informatike</h1>
       <!-- <p class="display-1 font-italic font-weight-light text-center my-12">
         Studij Informatike omogućava stjecanje novog, novigfoewewoif
@@ -119,6 +119,10 @@ export default {
 </script>
 
 <style>
+.landing-container{
+  animation: drop 2.5s ease;
+}
+
 #bg {
   background-image: url("/rezback.png");
   background-size: cover;
@@ -136,5 +140,16 @@ export default {
 
 #app .area-around {
   padding: 7em 0 7em 0;
+}
+
+@keyframes drop{
+  0% {
+    opacity: 0;
+    transform: translateY( -80px );
+  }
+  100%{
+    opacity: 1;
+    transform: translateY( 0 );
+  }
 }
 </style>

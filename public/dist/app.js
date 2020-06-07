@@ -4420,7 +4420,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.switch__card{\n        background: white;\n        box-shadow: 2px 8px 15px 0.2px #888888;\n}\n.switch-info-icons{\n    margin-top: 5em;\n}\n.card-switch-text{\n    color: #1f4386;\n    font-size: 0.6em;\n}\n.fa-youtube, .fa-facebook, .fa-instagram{\n    font-size: 2em;\n}\n.switch-info-icons{\n    margin-bottom: 5em;\n}\n@media only screen and (min-width: 960px) {\n.card-switch-text{\n      font-size: 1em;\n}\n.switch__card{\n        border-radius: 15px 50px 30px;\n        padding: 2em;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.switch__card{\n        background: white;\n        box-shadow: 2px 8px 15px 0.2px #888888;\n}\n.switch-info-icons{\n    margin-top: 5em;\n}\n.card-switch-text{\n    color: #1f4386;\n    font-size: 1em;\n}\n.fa-youtube, .fa-facebook, .fa-instagram{\n    font-size: 2em;\n}\n.switch-info-icons{\n    margin-bottom: 5em;\n}\n@media only screen and (min-width: 960px) {\n.card-switch-text{\n      font-size: 1em;\n}\n.switch__card{\n        border-radius: 15px 50px 30px;\n        padding: 2em;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -4439,7 +4439,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#bg {\r\n  background-image: url(\"/rezback.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  background-attachment: fixed;\n}\n.justify-text {\r\n  text-align: justify;\n}\n#app .row.align-center div.col.col-md-7 .v-responsive.v-image {\r\n  margin-left: 3px;\n}\n#app .area-around {\r\n  padding: 7em 0 7em 0;\n}\r\n", ""]);
+exports.push([module.i, "\n.landing-container{\r\n  -webkit-animation: drop 2.5s ease;\r\n          animation: drop 2.5s ease;\n}\n#bg {\r\n  background-image: url(\"/rezback.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  background-attachment: fixed;\n}\n.justify-text {\r\n  text-align: justify;\n}\n#app .row.align-center div.col.col-md-7 .v-responsive.v-image {\r\n  margin-left: 3px;\n}\n#app .area-around {\r\n  padding: 7em 0 7em 0;\n}\n@-webkit-keyframes drop{\n0% {\r\n    opacity: 0;\r\n    transform: translateY( -80px );\n}\n100%{\r\n    opacity: 1;\r\n    transform: translateY( 0 );\n}\n}\n@keyframes drop{\n0% {\r\n    opacity: 0;\r\n    transform: translateY( -80px );\n}\n100%{\r\n    opacity: 1;\r\n    transform: translateY( 0 );\n}\n}\r\n", ""]);
 
 // exports
 
@@ -6488,6 +6488,7 @@ var render = function() {
         [
           _c(
             "v-container",
+            { staticClass: "landing-container" },
             [
               _c(
                 "h1",
@@ -63976,8 +63977,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-4\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-4\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

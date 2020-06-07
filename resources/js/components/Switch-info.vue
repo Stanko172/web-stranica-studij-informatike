@@ -89,7 +89,7 @@ export default {
 
   .card-switch-text{
     color: #1f4386;
-    font-size: 0.6em;
+    font-size: 1em;
   }
 
   .fa-youtube, .fa-facebook, .fa-instagram{

@@ -1,5 +1,20 @@
 <template>
   <v-container class="container-margin">
+
+    <div v-show="!notifications.length">
+      <v-sheet
+        class="px-3 pt-3 pb-3"
+        v-for="n in 3"
+        :key="n"
+      >
+        <v-skeleton-loader
+          class="mx-auto"
+          width="90%"
+          type="card"
+        ></v-skeleton-loader>
+      </v-sheet>
+    </div>
+
     <v-app v-show="notifications.length">
 
       <v-hover
@@ -61,11 +76,14 @@ export default {
       this.axios.get(this.api).then((response) => {
         this.notifications = response.data;
       });
+    },
+    scrollToTop() {
+      this.$vuetify.goTo(0, {duration: 1000, offset: 0, easing: 'easeInOutCubic'});
     }
   },
   computed: {
     visiblePages () {
-      window.scrollTo(0, 0);
+      this.scrollToTop();
       return this.notifications.slice((this.page - 1) * this.perPage, this.perPage * this.page)
     }
   },

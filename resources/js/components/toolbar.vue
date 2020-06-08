@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-toolbar dark prominent src="/toolbar_bg.png" class="d-none d-sm-block d-print-block">
+    <v-toolbar dark prominent src="/toolbar_bg.png" class="d-none d-sm-block d-print-block" color="#667fcc">
       <span>
         <v-app-bar-nav-icon @click="sidebar = !sidebar" x-large></v-app-bar-nav-icon>
       </span>
-      <v-toolbar-title class="display-2 font-weight-medium">INFORMATIKA</v-toolbar-title>
+      <v-toolbar-title class="display-2 font-weight-medium">Informatika</v-toolbar-title>
 
       <template v-slot:extension>
         <v-tabs>
@@ -42,12 +42,15 @@
       <hr />
 
       <v-list shaped nav dense>
-        <v-list-item-group color="blue darken-4">
+        <v-list-item-group value="true">
           <v-list-item v-for="item in menu" :key="item.title">
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
+              <template v-slot:activator>
+          <v-list-item-title>Users</v-list-item-title>
+        </template>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -57,11 +60,11 @@
 
     <!-- razmak -->
 
-    <v-toolbar dark prominent src="/toolbar_bg.png" class="hidden-sm-and-up">
+    <v-toolbar dark prominent src="/toolbar_bg.png" class="hidden-sm-and-up" color="#667fcc">
       <span>
         <v-app-bar-nav-icon @click="sidebar = !sidebar" x-large></v-app-bar-nav-icon>
       </span>
-      <v-toolbar-title class="font-weight-medium" style="font-size: 25px">INFORMATIKA</v-toolbar-title>
+      <v-toolbar-title class="font-weight-medium" style="font-size: 25px">Informatika</v-toolbar-title>
 
       <template v-slot:extension>
         <v-tabs>

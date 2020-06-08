@@ -76,8 +76,12 @@
               <v-card-text>
                 <p class="display-1 primary--text font-weight-medium">Studij Matematike-Informatike</p>
                 <div class="justify-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam, corporis rerum nam consectetur tenetur aliquid eaque, qui minus atque minima commodi provident? Voluptatibus earum, quas dicta quam quisquam quidem?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos harum placeat quis, nihil enim totam? Vero deleniti sequi officia nostrum, aut aliquam quia assumenda, nesciunt repellat sint fugit. Laudantium?
+                  Na Fakultetu prirodoslovno-matematičkih i odgojnih znanosti Sveučilišta u Mostaru od  
+                  akademske 2019./2020. godine izvoditi će se novi preddiplomski Studij matematike i informatike. 
+                  Razne ankete pokazuju kako ovaj studijski program daje osobe spremne za rad na radnim mjestima 
+                  kao što je razvoj programskih rješenja (engl. software engineering) i znanost o podacima 
+                  (engl. data science). Nova struktura studijskog programa je motivirana raznim preddiplomskim 
+                  studijima računalne znanosti sa Sveučilišta u Saarlandu, Saarbrueckenu i Sveučilišta u Stuttgartu.
                 </div>
               </v-card-text>
             </v-col>

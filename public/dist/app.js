@@ -2182,9 +2182,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      link_yt: "https://www.youtube.com/channel/UCAxy1ltx_vV3sCPjmvVaWHQ",
-      link_fb: "https://www.facebook.com/fpmoz.ba/",
-      link_insta: "https://www.instagram.com/fpmoz.mostar/?hl=hr",
+      link_yt: "https://www.youtube.com/channel/UCxaAFKZCOMqXRUtBsfbgaCQ",
+      link_fb: "https://www.facebook.com/switchmostar/",
+      link_insta: "https://www.instagram.com/udrugaswitch/?hl=hr",
       item: {
         color: "red"
       }
@@ -2224,6 +2224,9 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
 //
 //
 //
@@ -2486,6 +2489,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Heading_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Heading.vue */ "./resources/js/components/Heading.vue");
 /* harmony import */ var _components_Head_info_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Head-info.vue */ "./resources/js/components/Head-info.vue");
 /* harmony import */ var _components_Footer_vue__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer.vue */ "./resources/js/components/Footer.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -6842,7 +6849,12 @@ var render = function() {
         "v-toolbar",
         {
           staticClass: "d-none d-sm-block d-print-block",
-          attrs: { dark: "", prominent: "", src: "/toolbar_bg.png" },
+          attrs: {
+            dark: "",
+            prominent: "",
+            src: "/toolbar_bg.png",
+            color: "#667fcc"
+          },
           scopedSlots: _vm._u([
             {
               key: "extension",
@@ -6894,7 +6906,7 @@ var render = function() {
           _c(
             "v-toolbar-title",
             { staticClass: "display-2 font-weight-medium" },
-            [_vm._v("INFORMATIKA")]
+            [_vm._v("Informatika")]
           ),
           _vm._v(" "),
           _vm._v(" "),
@@ -6971,7 +6983,7 @@ var render = function() {
             [
               _c(
                 "v-list-item-group",
-                { attrs: { color: "blue darken-4" } },
+                { attrs: { value: "true" } },
                 _vm._l(_vm.menu, function(item) {
                   return _c(
                     "v-list-item",
@@ -6989,7 +7001,27 @@ var render = function() {
                       _vm._v(" "),
                       _c(
                         "v-list-item-content",
-                        [_c("v-list-item-title", [_vm._v(_vm._s(item.title))])],
+                        {
+                          scopedSlots: _vm._u(
+                            [
+                              {
+                                key: "activator",
+                                fn: function() {
+                                  return [
+                                    _c("v-list-item-title", [_vm._v("Users")])
+                                  ]
+                                },
+                                proxy: true
+                              }
+                            ],
+                            null,
+                            true
+                          )
+                        },
+                        [
+                          _vm._v(" "),
+                          _c("v-list-item-title", [_vm._v(_vm._s(item.title))])
+                        ],
                         1
                       )
                     ],
@@ -7009,7 +7041,12 @@ var render = function() {
         "v-toolbar",
         {
           staticClass: "hidden-sm-and-up",
-          attrs: { dark: "", prominent: "", src: "/toolbar_bg.png" },
+          attrs: {
+            dark: "",
+            prominent: "",
+            src: "/toolbar_bg.png",
+            color: "#667fcc"
+          },
           scopedSlots: _vm._u([
             {
               key: "extension",
@@ -7064,7 +7101,7 @@ var render = function() {
               staticClass: "font-weight-medium",
               staticStyle: { "font-size": "25px" }
             },
-            [_vm._v("INFORMATIKA")]
+            [_vm._v("Informatika")]
           ),
           _vm._v(" "),
           _vm._v(" "),
@@ -7644,7 +7681,7 @@ var render = function() {
                                   _vm._v(" "),
                                   _c("div", { staticClass: "justify-text" }, [
                                     _vm._v(
-                                      "\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam, corporis rerum nam consectetur tenetur aliquid eaque, qui minus atque minima commodi provident? Voluptatibus earum, quas dicta quam quisquam quidem?\n                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos harum placeat quis, nihil enim totam? Vero deleniti sequi officia nostrum, aut aliquam quia assumenda, nesciunt repellat sint fugit. Laudantium?\n              "
+                                      "\n                Na Fakultetu prirodoslovno-matematičkih i odgojnih znanosti Sveučilišta u Mostaru od  \n                akademske 2019./2020. godine izvoditi će se novi preddiplomski Studij matematike i informatike. \n                Razne ankete pokazuju kako ovaj studijski program daje osobe spremne za rad na radnim mjestima \n                kao što je razvoj programskih rješenja (engl. software engineering) i znanost o podacima \n                (engl. data science). Nova struktura studijskog programa je motivirana raznim preddiplomskim \n                studijima računalne znanosti sa Sveučilišta u Saarlandu, Saarbrueckenu i Sveučilišta u Stuttgartu.\n              "
                                     )
                                   ])
                                 ])
@@ -65407,8 +65444,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-6\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-6\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

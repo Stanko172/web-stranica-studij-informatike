@@ -88,9 +88,9 @@
 export default {
   data() {
     return {
-      link_yt: "https://www.youtube.com/channel/UCAxy1ltx_vV3sCPjmvVaWHQ",
-      link_fb: "https://www.facebook.com/fpmoz.ba/",
-      link_insta: "https://www.instagram.com/fpmoz.mostar/?hl=hr",
+      link_yt: "https://www.youtube.com/channel/UCxaAFKZCOMqXRUtBsfbgaCQ",
+      link_fb: "https://www.facebook.com/switchmostar/",
+      link_insta: "https://www.instagram.com/udrugaswitch/?hl=hr",
       item: {
         color: "red"
       }

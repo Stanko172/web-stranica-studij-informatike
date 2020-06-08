@@ -115,7 +115,7 @@ export default {
   data: () => ({
     iss_menu: [
       { title: "Studenti", link: "https://studomat.sum.ba/" }, 
-      { title: "Profesori", link: "https://is.sum.ba/prod/f?p=1102:3:17164551705323:::::" }
+      { title: "Profesori", link: "https://is.sum.ba/" }
       ],
 
     sidebar: false,

@@ -2501,7 +2501,7 @@ __webpack_require__.r(__webpack_exports__);
         link: "https://studomat.sum.ba/"
       }, {
         title: "Profesori",
-        link: "https://is.sum.ba/prod/f?p=1102:3:17164551705323:::::"
+        link: "https://is.sum.ba/"
       }],
       sidebar: false,
       menu_title: "Izbornik",
@@ -2897,19 +2897,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      notifications: [],
+      notifications: [{}, {}, {}, {}, {}, {}],
+      loading: true,
       api: 'http://localhost:8000/api/articles',
       months: ['Siječanj', 'Veljača', 'Ožujak', 'Travanj', 'Svibanj', 'Lipanj', 'Srpanj', 'Kolovoz', 'Rujan', 'Listopad', 'Studeni', 'Prosinac'],
       days: ['Nedjelja', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota'],
@@ -2919,13 +2911,18 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     formatDate: function formatDate(date) {
-      return "\n        ".concat(this.days[new Date(date).getDay()], ",\n        ").concat(new Date(date).getDate(), "\n        ").concat(this.months[new Date(date).getMonth()], "\n        ").concat(new Date(date).getFullYear(), "\n        ").concat(("0" + new Date(date).getHours()).slice(-2), ":").concat(("0" + new Date(date).getMinutes()).slice(-2), "\n      ");
+      return "\n        ".concat(this.days[new Date(date).getDay()], ",\n        ").concat(new Date(date).getDate(), "\n        ").concat(this.months[new Date(date).getMonth()], "\n        ").concat(new Date(date).getFullYear(), "\n        ").concat(('0' + new Date(date).getHours()).slice(-2), ":").concat(('0' + new Date(date).getMinutes()).slice(-2), "\n      ");
     },
     fetchData: function fetchData() {
       var _this = this;
 
       this.axios.get(this.api).then(function (response) {
         _this.notifications = response.data;
+        _this.notifications = response.data;
+        _this.notifications = response.data;
+        _this.notifications = response.data;
+        _this.notifications = response.data;
+        _this.loading = false;
       });
     },
     scrollToTop: function scrollToTop() {
@@ -4962,7 +4959,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#app .v-card--shaped {\n  border-radius: 24px 4px;\n}\n.fade-enter-active,\n.fade-leave-active {\n  transition: opacity 1s\n}\n.fade-enter,\n.fade-leave-to {\n  opacity: 0\n}\n#app .pagination-margin {\n  margin: 32px 0 70px 0;\n}\n", ""]);
+exports.push([module.i, "\n#app .v-card--shaped {\r\n  border-radius: 24px 4px;\n}\n.fade-enter-active,\r\n.fade-leave-active {\r\n  transition: opacity 1s;\n}\n.fade-enter,\r\n.fade-leave-to {\r\n  opacity: 0;\n}\n#app .pagination-margin {\r\n  margin: 32px 0 70px 0;\n}\r\n", ""]);
 
 // exports
 
@@ -8516,128 +8513,106 @@ var render = function() {
     { staticClass: "container-margin" },
     [
       _c(
-        "div",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: !_vm.notifications.length,
-              expression: "!notifications.length"
-            }
-          ]
-        },
-        _vm._l(3, function(n) {
-          return _c(
-            "v-sheet",
-            { key: n, staticClass: "px-3 pt-3 pb-3" },
-            [
-              _c("v-skeleton-loader", {
-                staticClass: "mx-auto",
-                attrs: { width: "90%", type: "card" }
-              })
-            ],
-            1
-          )
-        }),
-        1
-      ),
-      _vm._v(" "),
-      _c(
         "v-app",
-        {
-          directives: [
-            {
-              name: "show",
-              rawName: "v-show",
-              value: _vm.notifications.length,
-              expression: "notifications.length"
-            }
-          ]
-        },
         [
           _vm._l(_vm.visiblePages, function(notification, i) {
-            return _c("v-hover", {
-              key: i,
-              attrs: { "close-delay": "80" },
-              scopedSlots: _vm._u(
-                [
-                  {
-                    key: "default",
-                    fn: function(ref) {
-                      var hover = ref.hover
-                      return [
-                        _c(
-                          "v-card",
-                          {
-                            staticClass: "mx-auto mt-6",
-                            attrs: {
-                              shaped: "",
-                              outlined: "",
-                              width: "90%",
-                              elevation: hover ? 8 : 2
-                            },
-                            model: {
-                              value: _vm.page,
-                              callback: function($$v) {
-                                _vm.page = $$v
-                              },
-                              expression: "page"
-                            }
-                          },
-                          [
-                            _c("v-card-text", [
-                              _c(
-                                "p",
-                                {
-                                  staticClass: "display-1",
-                                  attrs: { color: "blue darken-1" }
-                                },
-                                [_vm._v(_vm._s(notification.title))]
-                              ),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "mt-n3" }, [
-                                _vm._v(
-                                  _vm._s(_vm.formatDate(notification.created))
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c("div", {
-                                staticClass: "text--primary",
-                                domProps: {
-                                  innerHTML: _vm._s(notification.introtext)
-                                }
-                              })
-                            ]),
-                            _vm._v(" "),
+            return _c(
+              "v-skeleton-loader",
+              {
+                key: i,
+                attrs: {
+                  loading: _vm.loading,
+                  type: "card",
+                  transition: "scale-transition"
+                }
+              },
+              [
+                _c("v-hover", {
+                  attrs: { "close-delay": "80" },
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "default",
+                        fn: function(ref) {
+                          var hover = ref.hover
+                          return [
                             _c(
-                              "v-card-actions",
-                              { staticClass: "float-right" },
-                              [
-                                _c(
-                                  "v-btn",
-                                  {
-                                    attrs: {
-                                      text: "",
-                                      color: "deep-purple accent-4"
-                                    }
+                              "v-card",
+                              {
+                                staticClass: "mx-auto mt-6",
+                                attrs: {
+                                  shaped: "",
+                                  outlined: "",
+                                  width: "90%",
+                                  elevation: hover ? 8 : 2
+                                },
+                                model: {
+                                  value: _vm.page,
+                                  callback: function($$v) {
+                                    _vm.page = $$v
                                   },
-                                  [_vm._v("Opširnije")]
-                                )
+                                  expression: "page"
+                                }
+                              },
+                              [
+                                _c("v-card-text", [
+                                  _c(
+                                    "p",
+                                    {
+                                      staticClass: "display-1",
+                                      attrs: { color: "blue darken-1" }
+                                    },
+                                    [_vm._v(_vm._s(notification.title))]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("p", { staticClass: "mt-n3" }, [
+                                    _vm._v(
+                                      _vm._s(
+                                        _vm.formatDate(notification.created)
+                                      )
+                                    )
+                                  ]),
+                                  _vm._v(" "),
+                                  _c("div", {
+                                    staticClass: "text--primary",
+                                    domProps: {
+                                      innerHTML: _vm._s(notification.introtext)
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "d-flex flex-row-reverse" },
+                                    [
+                                      _c(
+                                        "v-btn",
+                                        {
+                                          staticClass: "float-right",
+                                          attrs: {
+                                            text: "",
+                                            color: "deep-purple accent-4"
+                                          }
+                                        },
+                                        [_vm._v("Opširnije")]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ])
                               ],
                               1
                             )
-                          ],
-                          1
-                        )
-                      ]
-                    }
-                  }
-                ],
-                null,
-                true
-              )
-            })
+                          ]
+                        }
+                      }
+                    ],
+                    null,
+                    true
+                  )
+                })
+              ],
+              1
+            )
           }),
           _vm._v(" "),
           _c("v-pagination", {
@@ -65956,8 +65931,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
 /* harmony import */ var vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VHover */ "./node_modules/vuetify/lib/components/VHover/index.js");
 /* harmony import */ var vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VPagination */ "./node_modules/vuetify/lib/components/VPagination/index.js");
-/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/index.js");
-/* harmony import */ var vuetify_lib_components_VSkeletonLoader__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VSkeletonLoader */ "./node_modules/vuetify/lib/components/VSkeletonLoader/index.js");
+/* harmony import */ var vuetify_lib_components_VSkeletonLoader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VSkeletonLoader */ "./node_modules/vuetify/lib/components/VSkeletonLoader/index.js");
 
 
 
@@ -65987,9 +65961,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-
-
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_5__["VApp"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCard"],VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardActions"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardText"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__["VHover"],VPagination: vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_10__["VPagination"],VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_11__["VSheet"],VSkeletonLoader: vuetify_lib_components_VSkeletonLoader__WEBPACK_IMPORTED_MODULE_12__["VSkeletonLoader"]})
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_5__["VApp"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_6__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_7__["VCardText"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VContainer"],VHover: vuetify_lib_components_VHover__WEBPACK_IMPORTED_MODULE_9__["VHover"],VPagination: vuetify_lib_components_VPagination__WEBPACK_IMPORTED_MODULE_10__["VPagination"],VSkeletonLoader: vuetify_lib_components_VSkeletonLoader__WEBPACK_IMPORTED_MODULE_11__["VSkeletonLoader"]})
 
 
 /* hot reload */
@@ -66209,8 +66181,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

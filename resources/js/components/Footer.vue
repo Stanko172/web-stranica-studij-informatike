@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer primary">
       <p>Copyright © 2020 Informatičko-tehnička udruga SWITCH. Sva prava pridržana.</p>
   </div>
 </template>
@@ -19,7 +19,6 @@ export default {
     align-items: center;
     height: 50px;
     width: 100vw;
-    background: #1f4386;
 }
 
 .footer p{ 

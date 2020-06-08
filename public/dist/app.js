@@ -4826,7 +4826,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.footer[data-v-61a7c374]{\r\n    display: flex;           \r\n    flex-direction: column;  \r\n    justify-content: center; \r\n    align-items: center;\r\n    height: 50px;\r\n    width: 100vw;\r\n    background: #1f4386;\n}\n.footer p[data-v-61a7c374]{ \r\n    color: white;\n}\n@media only screen and (max-width: 960px) {\n.footer p[data-v-61a7c374]{ \r\n    text-align: center;\r\n    font-size: 0.7em;\n}\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.footer[data-v-61a7c374]{\r\n    display: flex;           \r\n    flex-direction: column;  \r\n    justify-content: center; \r\n    align-items: center;\r\n    height: 50px;\r\n    width: 100vw;\n}\n.footer p[data-v-61a7c374]{ \r\n    color: white;\n}\n@media only screen and (max-width: 960px) {\n.footer p[data-v-61a7c374]{ \r\n    text-align: center;\r\n    font-size: 0.7em;\n}\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -4845,7 +4845,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.head-section[data-v-0e065920]{\r\n    margin-top: 2em;\n}\n.image-container[data-v-0e065920], .info-container[data-v-0e065920]{\r\n  display: flex;           \r\n  flex-direction: column;  \r\n  justify-content: center; \r\n  align-items: center;     \r\n  height: 300px;\n}\n.info-container h2[data-v-0e065920]{\r\n  color:#1f4386;\n}\n.info-container a[data-v-0e065920] {\r\n  font-size: 1.5em;\r\n  position: relative;\r\n  margin-top: 1em;\r\n  text-decoration: none;\n}\n.info-container a[data-v-0e065920]:hover {\r\n  color: #1f4386;\n}\n.info-container a[data-v-0e065920]::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 3px;\r\n  bottom: 0;\r\n  left: 0;\r\n  background-color: #1f4386;\r\n  visibility: hidden;\r\n  transform: scaleX(0);\r\n  transition: all 0.3s ease-in-out 0s;\n}\n.info-container a[data-v-0e065920]:hover::before {\r\n  visibility: visible;\r\n  transform: scaleX(1);\n}\n.info-container p[data-v-0e065920]{\r\n  font-size: 1.1em;\n}\n.person-info[data-v-0e065920]{\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: flex-start;\n}\n.person-info i[data-v-0e065920]{\r\n  margin-right: 0.7em;\r\n  color:#1f4386;\r\n  font-size: 1.2em;\n}\r\n\r\n/*<hr /> styles */\nhr.style-hr[data-v-0e065920] {\r\n    height: 12px;\r\n    border: 0;\r\n    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.head-section[data-v-0e065920]{\r\n    margin-top: 2em;\n}\n.image-container[data-v-0e065920], .info-container[data-v-0e065920]{\r\n  display: flex;           \r\n  flex-direction: column;  \r\n  justify-content: center; \r\n  align-items: center;     \r\n  height: 300px;\n}\n.info-container h2[data-v-0e065920]{\r\n  color:#1f4386;\n}\n.info-container a[data-v-0e065920] {\r\n  font-size: 1.5em;\r\n  position: relative;\r\n  margin-top: 1em;\r\n  text-decoration: none;\n}\n.info-container a[data-v-0e065920]:hover {\r\n  color: #1f4386;\n}\n.info-container a[data-v-0e065920]::before {\r\n  content: \"\";\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 3px;\r\n  bottom: 0;\r\n  left: 0;\r\n  background-color: #1f4386;\r\n  visibility: hidden;\r\n  transform: scaleX(0);\r\n  transition: all 0.3s ease-in-out 0s;\n}\n.info-container a[data-v-0e065920]:hover::before {\r\n  visibility: visible;\r\n  transform: scaleX(1);\n}\n.info-container p[data-v-0e065920]{\r\n  font-size: 1.1em;\n}\n.person-info[data-v-0e065920]{\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: flex-start;\n}\n.person-info i[data-v-0e065920]{\r\n  margin-right: 0.7em;\r\n  font-size: 1.2em;\n}\r\n\r\n/*<hr /> styles */\nhr.style-hr[data-v-0e065920] {\r\n    height: 12px;\r\n    border: 0;\r\n    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -6424,7 +6424,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer" }, [
+    return _c("div", { staticClass: "footer primary" }, [
       _c("p", [
         _vm._v(
           "Copyright © 2020 Informatičko-tehnička udruga SWITCH. Sva prava pridržana."
@@ -6484,7 +6484,9 @@ var render = function() {
             "v-flex",
             { staticClass: "info-container", attrs: { xs12: "", md6: "" } },
             [
-              _c("h2", [_vm._v("Pročelnik studija")]),
+              _c("h2", { staticClass: "primary--text" }, [
+                _vm._v("Pročelnik studija")
+              ]),
               _vm._v(" "),
               _c(
                 "a",
@@ -6501,17 +6503,17 @@ var render = function() {
               _c("p", [_vm._v("Viši asistent")]),
               _vm._v(" "),
               _c("div", { staticClass: "person-info" }, [
-                _c("p", [
+                _c("p", { staticClass: "primary--text" }, [
                   _c("i", { staticClass: "fas fa-phone" }),
                   _vm._v("Tel. 063 18 10 14; 355-456")
                 ]),
                 _vm._v(" "),
-                _c("p", [
+                _c("p", { staticClass: "primary--text" }, [
                   _c("i", { staticClass: "fas fa-briefcase" }),
                   _vm._v("Ured 110")
                 ]),
                 _vm._v(" "),
-                _c("p", [
+                _c("p", { staticClass: "primary--text" }, [
                   _c("i", { staticClass: "fas fa-envelope" }),
                   _vm._v(" emil.brajkovic@fpmoz.sum.ba")
                 ])
@@ -66181,8 +66183,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web_stranica_studij_informatike\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

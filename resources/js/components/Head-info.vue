@@ -14,15 +14,15 @@
         </v-avatar>
       </v-flex>
       <v-flex xs12 md6 class="info-container">
-        <h2>Pročelnik studija</h2>
+        <h2 class="primary--text">Pročelnik studija</h2>
 
         <a href="https://nastavnici.fpmoz.sum.ba/index.php/profile/index/16" title="Pogledaj profil">Emil Brajković</a>
         <p>Viši asistent</p>
 
         <div class="person-info">
-          <p><i class="fas fa-phone"></i>Tel. 063 18 10 14; 355-456</p>
-          <p><i class="fas fa-briefcase"></i>Ured 110</p>
-          <p><i class="fas fa-envelope"></i> emil.brajkovic@fpmoz.sum.ba</p>
+          <p class="primary--text"><i class="fas fa-phone"></i>Tel. 063 18 10 14; 355-456</p>
+          <p class="primary--text"><i class="fas fa-briefcase"></i>Ured 110</p>
+          <p class="primary--text"><i class="fas fa-envelope"></i> emil.brajkovic@fpmoz.sum.ba</p>
         </div>
       </v-flex>
     </v-layout>
@@ -97,7 +97,6 @@ export default {
 
 .person-info i{
   margin-right: 0.7em;
-  color:#1f4386;
   font-size: 1.2em;
 }
 

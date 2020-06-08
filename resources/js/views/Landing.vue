@@ -140,6 +140,14 @@
       </v-hover>
     </v-container>
 
+    <!--Sekcija o partnerima studija informatike-->
+    
+    <v-container>
+
+      <PartnersInfo />
+
+    </v-container>
+
     <!--Sekcija o procelniku studija informatike-->
 
     <HeadInfo />
@@ -156,6 +164,7 @@ import SwitchParallax from "../components/Switch-parallax";
 import Heading from "../components/Heading.vue";
 import HeadInfo from "../components/Head-info.vue";
 import Footer from "../components/Footer.vue";
+import PartnersInfo from "../components/Partners-info.vue";
 
 export default {
   components: {
@@ -163,7 +172,8 @@ export default {
     SwitchParallax,
     Heading,
     HeadInfo,
-    Footer
+    Footer,
+    PartnersInfo
   },
   data: () => ({
     mathFileUrl:

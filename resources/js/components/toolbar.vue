@@ -1,6 +1,12 @@
 <template>
   <div>
-    <v-toolbar dark prominent src="/toolbar_bg.png" class="d-none d-sm-block d-print-block" color="#667fcc">
+    <v-toolbar
+      dark
+      prominent
+      src="/toolbar_bg.png"
+      class="d-none d-sm-block d-print-block"
+      color="#667fcc"
+    >
       <span>
         <v-app-bar-nav-icon @click="sidebar = !sidebar" x-large></v-app-bar-nav-icon>
       </span>
@@ -43,14 +49,26 @@
 
       <v-list shaped nav dense>
         <v-list-item-group value="true">
-          <v-list-item v-for="item in menu" :key="item.title">
+          <v-list-group no-action>
+            <template v-slot:activator>
+              <v-list-item-action>
+              <v-icon>fas fa-angle-right</v-icon>
+            </v-list-item-action>
+              <v-list-item-title>ISS</v-list-item-title>
+            </template>
+
+            <v-list-item v-for="(item, i) in iss_menu" :key="i" :href="item.link" target="blank">
+              <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-group>
+
+          <v-list-item v-for="(item, i) in menu" :key="i" :href="item.link" target="blank">
             <v-list-item-icon>
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <template v-slot:activator>
-          <v-list-item-title>Users</v-list-item-title>
-        </template>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -95,20 +113,21 @@
 <script>
 export default {
   data: () => ({
+    iss_menu: [
+      { title: "Studenti", link: "https://studomat.sum.ba/" }, 
+      { title: "Profesori", link: "https://is.sum.ba/prod/f?p=1102:3:17164551705323:::::" }
+      ],
+
     sidebar: false,
     menu_title: "Izbornik",
     link_yt: "https://www.youtube.com/channel/UCAxy1ltx_vV3sCPjmvVaWHQ",
     link_fb: "https://www.facebook.com/fpmoz.ba/",
     link_insta: "https://www.instagram.com/fpmoz.mostar/?hl=hr",
     menu: [
-      { title: "NOVOSTI", path: "/", icon: "fas fa-angle-right" },
-      { title: "ISS", path: "/", icon: "fas fa-angle-right" },
-      { title: "SUMARUM", path: "/", icon: "fas fa-angle-right" },
-      { title: "Odaberi znanje!", path: "/", icon: "fas fa-angle-right" },
-      { title: "Udruga '<Switch>'", path: "/", icon: "fas fa-angle-right" },
-      { title: "Akademski kalendar", path: "/", icon: "fas fa-angle-right" },
-      { title: "Troskovi studija", path: "/", icon: "fas fa-angle-right" },
-      { title: "O studiju", path: "/", icon: "fas fa-angle-right" }
+      { title: "SUMARUM", path: "/", icon: "fas fa-angle-right", link: "https://eucenje.sum.ba/moodle/" },
+      { title: "Odaberi znanje!", path: "/", icon: "fas fa-angle-right", link: "https://upisi.fpmoz.sum.ba/" },
+      { title: "Akademski kalendar", path: "/", icon: "fas fa-angle-right", link: "https://www.sum.ba/kalendar-nastave" },
+      { title: "Troskovi studija", path: "/", icon: "fas fa-angle-right", link: "https://www.fpmoz.sum.ba/images/Trokovi-studija.pdf" },
     ]
   })
 };

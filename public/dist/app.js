@@ -2318,46 +2318,59 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
+      iss_menu: [{
+        title: "Studenti",
+        link: "https://studomat.sum.ba/"
+      }, {
+        title: "Profesori",
+        link: "https://is.sum.ba/prod/f?p=1102:3:17164551705323:::::"
+      }],
       sidebar: false,
       menu_title: "Izbornik",
       link_yt: "https://www.youtube.com/channel/UCAxy1ltx_vV3sCPjmvVaWHQ",
       link_fb: "https://www.facebook.com/fpmoz.ba/",
       link_insta: "https://www.instagram.com/fpmoz.mostar/?hl=hr",
       menu: [{
-        title: "NOVOSTI",
-        path: "/",
-        icon: "fas fa-angle-right"
-      }, {
-        title: "ISS",
-        path: "/",
-        icon: "fas fa-angle-right"
-      }, {
         title: "SUMARUM",
         path: "/",
-        icon: "fas fa-angle-right"
+        icon: "fas fa-angle-right",
+        link: "https://eucenje.sum.ba/moodle/"
       }, {
         title: "Odaberi znanje!",
         path: "/",
-        icon: "fas fa-angle-right"
-      }, {
-        title: "Udruga '<Switch>'",
-        path: "/",
-        icon: "fas fa-angle-right"
+        icon: "fas fa-angle-right",
+        link: "https://upisi.fpmoz.sum.ba/"
       }, {
         title: "Akademski kalendar",
         path: "/",
-        icon: "fas fa-angle-right"
+        icon: "fas fa-angle-right",
+        link: "https://www.sum.ba/kalendar-nastave"
       }, {
         title: "Troskovi studija",
         path: "/",
-        icon: "fas fa-angle-right"
-      }, {
-        title: "O studiju",
-        path: "/",
-        icon: "fas fa-angle-right"
+        icon: "fas fa-angle-right",
+        link: "https://www.fpmoz.sum.ba/images/Trokovi-studija.pdf"
       }]
     };
   }
@@ -6984,51 +6997,86 @@ var render = function() {
               _c(
                 "v-list-item-group",
                 { attrs: { value: "true" } },
-                _vm._l(_vm.menu, function(item) {
-                  return _c(
-                    "v-list-item",
-                    { key: item.title },
-                    [
-                      _c(
-                        "v-list-item-icon",
-                        [
-                          _c("v-icon", {
-                            domProps: { textContent: _vm._s(item.icon) }
-                          })
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-list-item-content",
+                [
+                  _c(
+                    "v-list-group",
+                    {
+                      attrs: { "no-action": "" },
+                      scopedSlots: _vm._u([
                         {
-                          scopedSlots: _vm._u(
-                            [
-                              {
-                                key: "activator",
-                                fn: function() {
-                                  return [
-                                    _c("v-list-item-title", [_vm._v("Users")])
-                                  ]
-                                },
-                                proxy: true
-                              }
-                            ],
-                            null,
-                            true
-                          )
-                        },
-                        [
-                          _vm._v(" "),
-                          _c("v-list-item-title", [_vm._v(_vm._s(item.title))])
-                        ],
-                        1
-                      )
+                          key: "activator",
+                          fn: function() {
+                            return [
+                              _c(
+                                "v-list-item-action",
+                                [_c("v-icon", [_vm._v("fas fa-angle-right")])],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c("v-list-item-title", [_vm._v("ISS")])
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    },
+                    [
+                      _vm._v(" "),
+                      _vm._l(_vm.iss_menu, function(item, i) {
+                        return _c(
+                          "v-list-item",
+                          {
+                            key: i,
+                            attrs: { href: item.link, target: "blank" }
+                          },
+                          [
+                            _c(
+                              "v-list-item-content",
+                              [
+                                _c("v-list-item-title", [
+                                  _vm._v(_vm._s(item.title))
+                                ])
+                              ],
+                              1
+                            )
+                          ],
+                          1
+                        )
+                      })
                     ],
-                    1
-                  )
-                }),
-                1
+                    2
+                  ),
+                  _vm._v(" "),
+                  _vm._l(_vm.menu, function(item, i) {
+                    return _c(
+                      "v-list-item",
+                      { key: i, attrs: { href: item.link, target: "blank" } },
+                      [
+                        _c(
+                          "v-list-item-icon",
+                          [
+                            _c("v-icon", {
+                              domProps: { textContent: _vm._s(item.icon) }
+                            })
+                          ],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-list-item-content",
+                          [
+                            _c("v-list-item-title", [
+                              _vm._v(_vm._s(item.title))
+                            ])
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  })
+                ],
+                2
               )
             ],
             1
@@ -64872,7 +64920,9 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VAppBarNavIcon: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_4__["VAppBarNavIcon"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_6__["VIcon"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VList"],VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItem"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemContent"],VListItemGroup: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemGroup"],VListItemIcon: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemIcon"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemTitle"],VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_8__["VNavigationDrawer"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_9__["VSpacer"],VTab: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_10__["VTab"],VTabs: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_10__["VTabs"],VToolbar: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_11__["VToolbar"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_11__["VToolbarTitle"]})
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VAppBarNavIcon: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_4__["VAppBarNavIcon"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_6__["VIcon"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VList"],VListGroup: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListGroup"],VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItem"],VListItemAction: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemAction"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemContent"],VListItemGroup: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemGroup"],VListItemIcon: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemIcon"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemTitle"],VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_8__["VNavigationDrawer"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_9__["VSpacer"],VTab: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_10__["VTab"],VTabs: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_10__["VTabs"],VToolbar: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_11__["VToolbar"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_11__["VToolbarTitle"]})
 
 
 /* hot reload */

@@ -2623,18 +2623,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Contact',
   data: function data() {
     return {
       e6: 1,
+      formValid: false,
       username: '',
       home_address: '',
       email: '',
       message: '',
       phone_number: '',
-      loader: ''
+      loader: '',
+      nameRule: [function (value) {
+        return !!value || 'Ime je obvezno polje!';
+      }],
+      addressRule: [function (value) {
+        return !!value || 'Mjesto prebivališta je obvezno polje!';
+      }],
+      emailRule: [function (value) {
+        return !!value || 'Email je obvezno polje!';
+      }],
+      phoneRule: [function (value) {
+        return !!value || 'Broj telefona je obvezno polje!';
+      }],
+      messageRule: [function (value) {
+        return !!value || 'Poruka je obvezno polje!';
+      }]
     };
   },
   methods: {
@@ -11131,6 +11151,15 @@ var render = function() {
                 [
                   _c(
                     "v-form",
+                    {
+                      model: {
+                        value: _vm.formValid,
+                        callback: function($$v) {
+                          _vm.formValid = $$v
+                        },
+                        expression: "formValid"
+                      }
+                    },
                     [
                       _c(
                         "v-row",
@@ -11144,7 +11173,8 @@ var render = function() {
                                   label: "Ime i prezime",
                                   "append-icon": "mdi-account",
                                   outlined: "",
-                                  required: ""
+                                  required: "",
+                                  rules: _vm.nameRule
                                 },
                                 model: {
                                   value: _vm.username,
@@ -11167,7 +11197,8 @@ var render = function() {
                                   label: "Mjesto prebivališta",
                                   "append-icon": "mdi-home",
                                   outlined: "",
-                                  required: ""
+                                  required: "",
+                                  rules: _vm.addressRule
                                 },
                                 model: {
                                   value: _vm.home_address,
@@ -11196,7 +11227,8 @@ var render = function() {
                                   label: "Email",
                                   "append-icon": "mdi-email",
                                   outlined: "",
-                                  required: ""
+                                  required: "",
+                                  rules: _vm.emailRule
                                 },
                                 model: {
                                   value: _vm.email,
@@ -11219,7 +11251,8 @@ var render = function() {
                                   label: "Broj telefona",
                                   "append-icon": "mdi-phone",
                                   outlined: "",
-                                  required: ""
+                                  required: "",
+                                  rules: _vm.phoneRule
                                 },
                                 model: {
                                   value: _vm.phone_number,
@@ -11234,36 +11267,37 @@ var render = function() {
                           )
                         ],
                         1
-                      )
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-row",
-                    { attrs: { justify: "center" } },
-                    [
+                      ),
+                      _vm._v(" "),
                       _c(
-                        "v-col",
-                        { attrs: { md: "8", "mx-auto": "" } },
+                        "v-row",
+                        { attrs: { justify: "center" } },
                         [
-                          _c("v-textarea", {
-                            attrs: {
-                              label: "Unesite svoju poruku",
-                              "auto-grow": "",
-                              outlined: "",
-                              rows: "3",
-                              "row-height": "25",
-                              "append-icon": "mdi-message-text"
-                            },
-                            model: {
-                              value: _vm.message,
-                              callback: function($$v) {
-                                _vm.message = $$v
-                              },
-                              expression: "message"
-                            }
-                          })
+                          _c(
+                            "v-col",
+                            { attrs: { md: "8", "mx-auto": "" } },
+                            [
+                              _c("v-textarea", {
+                                attrs: {
+                                  label: "Unesite svoju poruku",
+                                  "auto-grow": "",
+                                  outlined: "",
+                                  rows: "3",
+                                  "row-height": "25",
+                                  "append-icon": "mdi-message-text",
+                                  rules: _vm.messageRule
+                                },
+                                model: {
+                                  value: _vm.message,
+                                  callback: function($$v) {
+                                    _vm.message = $$v
+                                  },
+                                  expression: "message"
+                                }
+                              })
+                            ],
+                            1
+                          )
                         ],
                         1
                       )
@@ -11275,7 +11309,11 @@ var render = function() {
                     "v-btn",
                     {
                       staticClass: "float-right",
-                      attrs: { color: "primary", rounded: "" },
+                      attrs: {
+                        color: "primary",
+                        disabled: !_vm.formValid,
+                        rounded: ""
+                      },
                       on: {
                         click: function($event) {
                           return _vm.sendMessage()
@@ -69573,8 +69611,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\informatika\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\informatika\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-8\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-8\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

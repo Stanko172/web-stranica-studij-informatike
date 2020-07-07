@@ -76,24 +76,43 @@
 
 
 <script>
+import axios from 'axios'
 export default {
 	name: 'Contact',
-
 	data: () => ({
 		e6: 1,
 		username: '',
 		home_address: '',
 		email: '',
 		message: '',
-		phone_number: '',
-	}),
-
+    phone_number: '',
+  }),
 	methods: {
 		sendMessage() {
-			console.log(this.home_address);
-			console.log(this.email);
-			console.log(this.message);
-			console.log(this.phone_number);
+      
+      const MessageData = {
+        name: this.username,
+        email: this.email,
+        message: this.message,
+        home_address: this.home_address,
+        phone_number: this.phone_number
+      }
+
+      axios.post('http://localhost:8000/api/contact', MessageData)
+      .then(response => {
+        //console.log(response)
+        if(response.statusText == "OK"){
+          this.$swal({
+            icon: 'success',
+            title: 'Uspješno poslan upit!',
+            timer: 4000,
+            text: 'Odgovor na upit će uskoro biti poslan na vašu e-mail adresu.'
+          })
+        }
+      })
+      .catch(err => {
+        console.log(err)
+      })
 		},
 	},
 };

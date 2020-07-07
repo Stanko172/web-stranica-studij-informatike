@@ -9,7 +9,7 @@
         <v-avatar size="200">
           <img
             src="https://nastavnici.fpmoz.sum.ba/uploads/emil.jpg"
-            alt="John"
+            alt="Emil Brajković"
           >
         </v-avatar>
       </v-flex>

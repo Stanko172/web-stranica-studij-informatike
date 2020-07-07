@@ -1,5 +1,8 @@
 <?php
 
+use App\Mail\ContactFormMail;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,6 +16,7 @@
 
 $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('articles',  ['uses' => 'ArticlesController@showArticles']);
+    $router->post('contact',  ['uses' => 'ContactFormController@store']);
 });
 
 $router->get('/{route:.*}/', function ()  {

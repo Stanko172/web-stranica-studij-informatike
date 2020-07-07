@@ -86,6 +86,7 @@ export default {
 		email: '',
 		message: '',
     phone_number: '',
+    loader: ''
   }),
 	methods: {
 		sendMessage() {
@@ -98,10 +99,18 @@ export default {
         phone_number: this.phone_number
       }
 
+      //Aktiviranje loader-a
+      this.setLoader()
+
       axios.post('http://localhost:8000/api/contact', MessageData)
       .then(response => {
         //console.log(response)
         if(response.statusText == "OK"){
+          
+          //Zaustavljanje loader-a
+          this.loader.hide()
+
+          //Aktivacija alert-a o uspješno poslanom upitu
           this.$swal({
             icon: 'success',
             title: 'Uspješno poslan upit!',
@@ -113,7 +122,20 @@ export default {
       .catch(err => {
         console.log(err)
       })
-		},
+    },
+    setLoader(){
+       this.loader = this.$loading.show({
+        container: this.$refs.loadingContainer,
+        canCancel: true,
+        color: '#000000',
+        loader: 'spinner',
+        width: 64,
+        height: 64,
+        backgroundColor: '#ffffff',
+        opacity: 0.5,
+        zIndex: 999,
+        });
+    }
 	},
 };
 </script>

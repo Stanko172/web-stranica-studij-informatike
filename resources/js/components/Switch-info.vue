@@ -47,7 +47,7 @@
             class="mx-5 text-justify mb-5"
           >Switch je udruga studenata koji nastoje poboljšati znanje i vještine studenata na području informatike i tehnike. Studentima se pruža prilika da se uključe u zajedničko učenje, međusobno razmjenjuju materijale i sudjeluju u događajima koje udruga organizira. U nastojanju povezivanja studenata Sveučilišta udruga pokušava omogućiti otvorenu razmjenu ideja, iskustava znanja. Cilj udruge je promicati nove tehnologije i cjeloživotno učenje kroz različite radionice i projekte. Želimo podijeliti znanje i entuzijazam koji imamo velikom broju ljudi, motivirati zainteresirane studente da samostalno nastave istraživati i učiti. Udruga organizira brojne događaje od kojih je najpoznatiji dan matematike informatike. Studenti matematike, informatike i tehnike u suranji sa profesorima i asistenima organiziraju i smišljaju sadržaj koji se predstavlja učenicima srednjih škola kako bi se probudio interes prema studijima i mogućnostima. Učenicima su predstavljeni roboti, uređaji i tehnologije koji su dostupni na fakultetu I koji podižu razinu i kvalitetu obrazovanja kroz konkretnu primjenu. Udruga Switch organizira besplatne cikluse predavanja o osnovama programiranja, razvoju za web, robotiku, dizajn, ali i različita natjecanja i projekte. Također, udruga Switch se posobno ponosi svojim članovima Tehničke podrške udruge Switch koja samostalno održava i servisira računalne učionice FPMOZ-a. Članovi udruge se trude posjećivati šo više događaja vezanih za IT nauke, na području Mostara ali i šire. Kroz članstvo u udruzi studenti grade vještine komunikacije, prezentiranja, osjećaj odgovornosti i obzirnosti jedni prema drugima. Biti Switcher podrazumijeva snažnu volju i sposobnost učenja, rad u timu i izrazitu komunikaciju i sigurnu zabavu.</div>
           <div class="mx-5">
-            <v-dialog v-model="dialog" scrollable>
+            <v-dialog scrollable>
               <template v-slot:activator="{ on }">
                 <v-btn block color="primary" dark v-on="on">Virtualni dan MI</v-btn>
               </template>
@@ -63,7 +63,7 @@
             </v-dialog>
           </div>
           <div class="mx-5 mt-3">
-            <v-dialog v-model="dialog" scrollable>
+            <v-dialog scrollable>
               <template v-slot:activator="{ on }">
                 <v-btn block color="primary" dark v-on="on">SPARK Hackathon</v-btn>
               </template>

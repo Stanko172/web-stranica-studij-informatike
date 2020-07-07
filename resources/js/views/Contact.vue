@@ -93,13 +93,14 @@ export default {
     phone_number: '',
     loader: '',
     nameRule: [
-      value => !!value || 'Ime je obvezno polje!',
+      value => !!value || 'Ime i prezime je obvezno polje!',
     ],
     addressRule: [
       value => !!value || 'Mjesto prebivališta je obvezno polje!',
     ],
     emailRule: [
       value => !!value || 'Email je obvezno polje!',
+      value => /.+@.+\..+/.test(value) || 'Neispravan e-mail format',
     ],
     phoneRule: [
       value => !!value || 'Broj telefona je obvezno polje!',

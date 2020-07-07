@@ -2641,13 +2641,15 @@ __webpack_require__.r(__webpack_exports__);
       phone_number: '',
       loader: '',
       nameRule: [function (value) {
-        return !!value || 'Ime je obvezno polje!';
+        return !!value || 'Ime i prezime je obvezno polje!';
       }],
       addressRule: [function (value) {
         return !!value || 'Mjesto prebivališta je obvezno polje!';
       }],
       emailRule: [function (value) {
         return !!value || 'Email je obvezno polje!';
+      }, function (value) {
+        return /.+@.+\..+/.test(value) || 'Neispravan e-mail format';
       }],
       phoneRule: [function (value) {
         return !!value || 'Broj telefona je obvezno polje!';

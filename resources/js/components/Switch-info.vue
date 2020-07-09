@@ -4,7 +4,7 @@
       <v-layout row wrap>
         <v-flex xs12 md6 class="test">
           <v-card class="mx-auto" max-width="430px">
-            <v-img class="white--text align-end" height="206px" src="/logo-switch.png"></v-img>
+            <v-img class="white--text align-end" height="206px" src="/logo_switch.jpg"></v-img>
 
             <v-card-subtitle class="pb-3">Udruga Switch</v-card-subtitle>
 

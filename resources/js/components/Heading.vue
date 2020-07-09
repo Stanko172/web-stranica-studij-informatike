@@ -1,7 +1,7 @@
 <template> 
   <div id="bg" style="padding-top: 100px;">
     <v-container class="landing-container">
-      <h1 class="primary--text display-3 font-weight-bold text-center">Dobrodošli na studij Informatike</h1>
+      <p class="primary--text text-center welcome__text">Dobrodošli na studij Informatike</p>
       
       <v-row class="justify-center area-around">
         <v-dialog scrollable>
@@ -25,7 +25,7 @@
           <template v-slot:activator="{ on }">
             <v-btn color="primary" v-on="on" style="margin-left: 1em" rounded class="mb-10">
               <v-icon left class="white--text">mdi-play</v-icon>
-              <span class="button-text">Eureka Promo</span>
+              <span class="button-text">Eureka Video</span>
             </v-btn>
           </template>
           <v-card height="78vh">
@@ -60,6 +60,11 @@
   background-attachment: fixed;
 }
 
+.welcome__text{
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+
 .justify-text {
   text-align: justify;
 }
@@ -67,6 +72,12 @@
 
 #app .area-around {
   padding: 7em 0 7em 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome__text{
+    font-size: 2em;
+  }
 }
 
 @keyframes drop{

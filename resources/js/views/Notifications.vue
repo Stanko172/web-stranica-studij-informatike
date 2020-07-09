@@ -47,7 +47,7 @@ export default {
   data: () => ({
     notifications: [{}, {}, {}, {}, {}, {}],
     loading: true,
-    api: 'http://localhost:8000/api/articles',
+    api: `https://${window.location.host}/api/articles`,
     months: [
       'Siječanj',
       'Veljača',

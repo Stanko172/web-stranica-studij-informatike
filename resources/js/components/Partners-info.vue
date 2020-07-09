@@ -12,7 +12,7 @@
     <v-img
       class="white--text align-end"
       height="250px"
-      src="/onr.png"
+      src="/onr.jpg"
     >
     </v-img>
 

@@ -1952,7 +1952,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      link_yt: "https://www.youtube.com/channel/UCxaAFKZCOMqXRUtBsfbgaCQ",
+      link_fb: "https://www.facebook.com/switchmostar/",
+      link_insta: "https://www.instagram.com/udrugaswitch/?hl=hr"
+    };
+  }
+});
 
 /***/ }),
 
@@ -1965,6 +2003,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -2965,7 +3005,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       notifications: [{}, {}, {}, {}, {}, {}],
       loading: true,
-      api: 'http://localhost:8000/api/articles',
+      api: "https://".concat(window.location.host, "/api/articles"),
       months: ['Siječanj', 'Veljača', 'Ožujak', 'Travanj', 'Svibanj', 'Lipanj', 'Srpanj', 'Kolovoz', 'Rujan', 'Listopad', 'Studeni', 'Prosinac'],
       days: ['Nedjelja', 'Ponedjeljak', 'Utorak', 'Srijeda', 'Četvrtak', 'Petak', 'Subota'],
       page: 1,
@@ -4927,7 +4967,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.footer[data-v-61a7c374]{\r\n    display: flex;           \r\n    flex-direction: column;  \r\n    justify-content: center; \r\n    align-items: center;\r\n    height: 50px;\r\n    width: 100vw;\n}\n.footer p[data-v-61a7c374]{ \r\n    color: white;\n}\n@media only screen and (max-width: 960px) {\n.footer p[data-v-61a7c374]{ \r\n    text-align: center;\r\n    font-size: 0.7em;\n}\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n@media only screen and (max-width: 530px) {\n.footer-text[data-v-61a7c374]{\n    font-size: 12px;\n}\n.footer-heading[data-v-61a7c374]{\n    font-size: 16px;\n}\n}\n", ""]);
 
 // exports
 
@@ -4965,7 +5005,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.landing-container{\r\n  -webkit-animation: drop 2.5s ease;\r\n          animation: drop 2.5s ease;\n}\n#bg {\r\n  background-image: url(\"/background-resized.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  background-attachment: fixed;\n}\n.justify-text {\r\n  text-align: justify;\n}\n#app .area-around {\r\n  padding: 7em 0 7em 0;\n}\n@-webkit-keyframes drop{\n0% {\r\n    opacity: 0;\r\n    transform: translateY( -80px );\n}\n100%{\r\n    opacity: 1;\r\n    transform: translateY( 0 );\n}\n}\n@keyframes drop{\n0% {\r\n    opacity: 0;\r\n    transform: translateY( -80px );\n}\n100%{\r\n    opacity: 1;\r\n    transform: translateY( 0 );\n}\n}\r\n", ""]);
+exports.push([module.i, "\n.landing-container{\r\n  -webkit-animation: drop 2.5s ease;\r\n          animation: drop 2.5s ease;\n}\n#bg {\r\n  background-image: url(\"/background-resized.png\");\r\n  background-size: cover;\r\n  background-position: center center;\r\n  background-attachment: fixed;\n}\n.welcome__text{\r\n    font-size: 3.5em;\r\n    font-weight: bold;\n}\n.justify-text {\r\n  text-align: justify;\n}\n#app .area-around {\r\n  padding: 7em 0 7em 0;\n}\n@media only screen and (max-width: 600px) {\n.welcome__text{\r\n    font-size: 2em;\n}\n}\n@-webkit-keyframes drop{\n0% {\r\n    opacity: 0;\r\n    transform: translateY( -80px );\n}\n100%{\r\n    opacity: 1;\r\n    transform: translateY( 0 );\n}\n}\n@keyframes drop{\n0% {\r\n    opacity: 0;\r\n    transform: translateY( -80px );\n}\n100%{\r\n    opacity: 1;\r\n    transform: translateY( 0 );\n}\n}\r\n", ""]);
 
 // exports
 
@@ -9738,22 +9778,90 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "v-footer",
+    { attrs: { dark: "", padless: "" } },
+    [
+      _c(
+        "v-card",
+        { staticClass: "flex", attrs: { flat: "", tile: "" } },
+        [
+          _c(
+            "v-card-title",
+            { staticClass: "primary" },
+            [
+              _c("strong", { staticClass: "subheading footer-heading" }, [
+                _vm._v("SWITCH")
+              ]),
+              _vm._v(" "),
+              _c("v-spacer"),
+              _vm._v(" "),
+              _c(
+                "v-btn",
+                {
+                  staticClass: "mx-2",
+                  attrs: {
+                    icon: "",
+                    color: "white",
+                    href: _vm.link_yt,
+                    target: "_blank"
+                  }
+                },
+                [_c("i", { staticClass: "fab fa-youtube" })]
+              ),
+              _vm._v(" "),
+              _c(
+                "v-btn",
+                {
+                  staticClass: "mx-2",
+                  attrs: {
+                    icon: "",
+                    color: "white",
+                    href: _vm.link_insta,
+                    target: "_blank"
+                  }
+                },
+                [_c("i", { staticClass: "fab fa-instagram" })]
+              ),
+              _vm._v(" "),
+              _c(
+                "v-btn",
+                {
+                  staticClass: "mx-2",
+                  attrs: {
+                    icon: "",
+                    color: "white",
+                    href: _vm.link_fb,
+                    target: "_blank"
+                  }
+                },
+                [_c("i", { staticClass: "fab fa-facebook" })]
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-card-text",
+            { staticClass: "py-2 white--text text-center primary" },
+            [
+              _c("strong", { staticClass: "footer-text" }, [
+                _vm._v(
+                  "Copyright © " +
+                    _vm._s(new Date().getFullYear()) +
+                    " Informatičko-tehnička udruga SWITCH. Sva prava pridržana."
+                )
+              ])
+            ]
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer primary" }, [
-      _c("p", [
-        _vm._v(
-          "Copyright © 2020 Informatičko-tehnička udruga SWITCH. Sva prava pridržana."
-        )
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -9782,64 +9890,72 @@ var render = function() {
       _c("hr", { staticClass: "style-hr" }),
       _vm._v(" "),
       _c(
-        "v-layout",
-        { attrs: { row: "", wrap: "" } },
+        "v-container",
         [
           _c(
-            "v-flex",
-            { staticClass: "image-container", attrs: { xs12: "", md6: "" } },
+            "v-row",
             [
-              _c("v-avatar", { attrs: { size: "200" } }, [
-                _c("img", {
-                  attrs: {
-                    src: "https://nastavnici.fpmoz.sum.ba/uploads/emil.jpg",
-                    alt: "Emil Brajković"
-                  }
-                })
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-flex",
-            { staticClass: "info-container", attrs: { xs12: "", md6: "" } },
-            [
-              _c("h2", { staticClass: "primary--text" }, [
-                _vm._v("Pročelnik studija")
-              ]),
-              _vm._v(" "),
               _c(
-                "a",
+                "v-col",
                 {
-                  attrs: {
-                    href:
-                      "https://nastavnici.fpmoz.sum.ba/index.php/profile/index/16",
-                    title: "Pogledaj profil"
-                  }
+                  staticClass: "image-container",
+                  attrs: { xs: "12", md: "6" }
                 },
-                [_vm._v("Emil Brajković")]
+                [
+                  _c("v-avatar", { attrs: { size: "200" } }, [
+                    _c("img", {
+                      attrs: {
+                        src: "/emil_brajkovic.jpg",
+                        alt: "Emil Brajković"
+                      }
+                    })
+                  ])
+                ],
+                1
               ),
               _vm._v(" "),
-              _c("p", [_vm._v("Viši asistent")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "person-info" }, [
-                _c("p", { staticClass: "primary--text" }, [
-                  _c("i", { staticClass: "fas fa-phone" }),
-                  _vm._v("Tel. 063 18 10 14; 355-456")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "primary--text" }, [
-                  _c("i", { staticClass: "fas fa-briefcase" }),
-                  _vm._v("Ured 110")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "primary--text" }, [
-                  _c("i", { staticClass: "fas fa-envelope" }),
-                  _vm._v(" emil.brajkovic@fpmoz.sum.ba")
-                ])
-              ])
-            ]
+              _c(
+                "v-col",
+                { staticClass: "info-container", attrs: { xs: "12", md: "6" } },
+                [
+                  _c("h2", { staticClass: "primary--text" }, [
+                    _vm._v("Pročelnik studija")
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      attrs: {
+                        href:
+                          "https://nastavnici.fpmoz.sum.ba/index.php/profile/index/16",
+                        title: "Pogledaj profil"
+                      }
+                    },
+                    [_vm._v("Emil Brajković")]
+                  ),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Viši asistent")]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "person-info" }, [
+                    _c("p", { staticClass: "primary--text" }, [
+                      _c("i", { staticClass: "fas fa-phone" }),
+                      _vm._v("Tel. 063 18 10 14; 355-456")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "primary--text" }, [
+                      _c("i", { staticClass: "fas fa-briefcase" }),
+                      _vm._v("Ured 110")
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "primary--text" }, [
+                      _c("i", { staticClass: "fas fa-envelope" }),
+                      _vm._v(" emil.brajkovic@fpmoz.sum.ba")
+                    ])
+                  ])
+                ]
+              )
+            ],
+            1
           )
         ],
         1
@@ -9880,14 +9996,9 @@ var render = function() {
         "v-container",
         { staticClass: "landing-container" },
         [
-          _c(
-            "h1",
-            {
-              staticClass:
-                "primary--text display-3 font-weight-bold text-center"
-            },
-            [_vm._v("Dobrodošli na studij Informatike")]
-          ),
+          _c("p", { staticClass: "primary--text text-center welcome__text" }, [
+            _vm._v("Dobrodošli na studij Informatike")
+          ]),
           _vm._v(" "),
           _c(
             "v-row",
@@ -9982,7 +10093,7 @@ var render = function() {
                               ),
                               _vm._v(" "),
                               _c("span", { staticClass: "button-text" }, [
-                                _vm._v("Eureka Promo")
+                                _vm._v("Eureka Video")
                               ])
                             ],
                             1
@@ -10095,7 +10206,7 @@ var render = function() {
                 [
                   _c("v-img", {
                     staticClass: "white--text align-end",
-                    attrs: { height: "250px", src: "/onr.png" }
+                    attrs: { height: "250px", src: "/onr.jpg" }
                   }),
                   _vm._v(" "),
                   _c("v-card-subtitle", { staticClass: "pb-0" }, [
@@ -10485,7 +10596,7 @@ var render = function() {
                     [
                       _c("v-img", {
                         staticClass: "white--text align-end",
-                        attrs: { height: "206px", src: "/logo-switch.png" }
+                        attrs: { height: "206px", src: "/logo_switch.jpg" }
                       }),
                       _vm._v(" "),
                       _c("v-card-subtitle", { staticClass: "pb-3" }, [
@@ -68328,6 +68439,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Footer_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer.vue?vue&type=script&lang=js& */ "./resources/js/components/Footer.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _Footer_vue_vue_type_style_index_0_id_61a7c374_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer.vue?vue&type=style&index=0&id=61a7c374&scoped=true&lang=css& */ "./resources/js/components/Footer.vue?vue&type=style&index=0&id=61a7c374&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
+/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
+/* harmony import */ var vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VFooter */ "./node_modules/vuetify/lib/components/VFooter/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
 
 
 
@@ -68346,6 +68463,17 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
   null
   
 )
+
+/* vuetify-loader */
+
+
+
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCard"],VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardText"],VCardTitle: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__["VCardTitle"],VFooter: vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_7__["VFooter"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__["VSpacer"]})
+
 
 /* hot reload */
 if (false) { var api; }
@@ -68443,7 +68571,8 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VAvatar: vuetify_lib_components_VAvatar__WEBPACK_IMPORTED_MODULE_5__["VAvatar"],VFlex: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VFlex"],VLayout: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VLayout"]})
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_4___default()(component, {VAvatar: vuetify_lib_components_VAvatar__WEBPACK_IMPORTED_MODULE_5__["VAvatar"],VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VCol"],VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VContainer"],VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__["VRow"]})
 
 
 /* hot reload */
@@ -69613,8 +69742,8 @@ var opts = {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-8\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\web-stranica-studij-informatike-8\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\informatika\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\informatika\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

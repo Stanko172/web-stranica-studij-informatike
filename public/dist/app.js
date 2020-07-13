@@ -2727,7 +2727,14 @@ __webpack_require__.r(__webpack_exports__);
           });
         }
       })["catch"](function (err) {
-        console.log(err);
+        _this.loader.hide();
+
+        _this.$swal({
+          icon: 'error',
+          title: 'Dogodila se greška!',
+          timer: 4000,
+          text: 'Molimo pokušajte kasnije.'
+        });
       });
     },
     setLoader: function setLoader() {

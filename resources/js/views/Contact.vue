@@ -141,7 +141,14 @@ export default {
         }
       })
       .catch(err => {
-        console.log(err)
+        this.loader.hide()
+
+        this.$swal({
+            icon: 'error',
+            title: 'Dogodila se greška!',
+            timer: 4000,
+            text: 'Molimo pokušajte kasnije.'
+          })
       })
     },
     setLoader(){

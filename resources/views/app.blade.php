@@ -17,6 +17,6 @@
 <body>
     <div id="app"></div>
     
-    <script src="dist/app.js?version=5"></script>
+    <script src="dist/app.js?version=6"></script>
 </body>
 </html>

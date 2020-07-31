@@ -123,7 +123,7 @@ export default {
       //Aktiviranje loader-a
       this.setLoader()
 
-      axios.post(`http://${window.location.host}/api/contact`, MessageData)
+      axios.post('https://informatika.fpmoz.sum.ba/api/contact', MessageData)
       .then(response => {
         //console.log(response)
         if(response.statusText == "OK"){

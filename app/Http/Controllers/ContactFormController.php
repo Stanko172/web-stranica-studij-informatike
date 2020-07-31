@@ -18,7 +18,7 @@ class ContactFormController extends Controller
         $data['home_address'] = request()->input('home_address');
         $data['phone_number'] = request()->input('phone_number');
 
-        Mail::to('fpmoz@sum.ba')->send(new ContactFormMail($data));
+        Mail::to('udrugaswitch@gmail.com')->send(new ContactFormMail($data));
 
     }
 }

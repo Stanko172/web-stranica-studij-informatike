@@ -123,7 +123,7 @@ export default {
       //Aktiviranje loader-a
       this.setLoader()
 
-      axios.post(`https://${window.location.host}/contact`, MessageData)
+      axios.post(`https://${window.location.host}/api/contact`, MessageData)
       .then(response => {
         //console.log(response)
         if(response.statusText == "OK"){

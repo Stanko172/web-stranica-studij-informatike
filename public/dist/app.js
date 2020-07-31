@@ -2712,7 +2712,7 @@ __webpack_require__.r(__webpack_exports__);
       }; //Aktiviranje loader-a
 
       this.setLoader();
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("https://".concat(window.location.host, "/contact"), MessageData).then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("http://".concat(window.location.host, "/api/contact"), MessageData).then(function (response) {
         //console.log(response)
         if (response.statusText == "OK") {
           //Zaustavljanje loader-a
